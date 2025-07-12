@@ -35,21 +35,21 @@
         ]
       },
       {
-        "tab": "API Reference",
+        "tab": "Bookmarks",
         "groups": [
           {
             "group": "API Documentation",
             "pages": [
-              "api-reference/introduction"
+              "bookmarks/introduction"
             ]
           },
           {
             "group": "Endpoint Examples",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "bookmarks/endpoint/get",
+              "bookmarks/endpoint/create",
+              "bookmarks/endpoint/delete",
+              "bookmarks/endpoint/webhook"
             ]
           }
         ]
@@ -76,8 +76,8 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/logo-light.svg",
+    "dark": "/logo/logo-dark.svg"
   },
   "navbar": {
     "links": [
