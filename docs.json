@@ -58,8 +58,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "The Design System Guide",
+          "href": "https://thedesignsystem.guide/",
           "icon": "book-open-cover"
         },
         {
@@ -68,8 +68,8 @@
           "icon": "slack"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "anchor": "Newsletter",
+          "href": "https://learn.thedesignsystem.guide/",
           "icon": "newspaper"
         }
       ]
