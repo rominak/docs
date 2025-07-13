@@ -3,11 +3,11 @@
   "theme": "almond",
   "name": "Mint Starter Kit",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#009689",
+    "light": "#00BBA7",
+    "dark": "#009689"
   },
-  "favicon": "/AIDESIGN-FAV.png",
+  "favicon": "/favicon.svg",
   "navigation": {
     "tabs": [
       {
@@ -17,8 +17,7 @@
             "group": "Get Started",
             "pages": [
               "index",
-              "quickstart",
-              "development"
+              "quickstart"
             ]
           },
           {
