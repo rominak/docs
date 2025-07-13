@@ -1,9 +1,115 @@
 ---
 title: Prompts
---- 
+---
 
-Here is an example of a prompt for generating a color palette for a design project. You can copy the text below and adapt it for your own needs.
+### Research Prompts
 
-```text "Color Palette Generation"
-Generate a color palette for a modern, minimalist website for a luxury brand. The brand's values are sophistication, elegance, and simplicity. Provide hex codes for a primary color, a secondary color, an accent color, and a neutral background color. The palette should be visually balanced and accessible.
+```text "User Flow Creation"
+Create a user flow for a [fitness app] that helps users set goals, track workouts, and view progress over time.
+```
+
+```text "User Analysis"
+Analyze [target audience/user group] and their pain points when [specific task]. What are their motivations, frustrations, and current workarounds? Include behavioral patterns and emotional triggers.
+```
+
+```text "Design Trend Research"
+Research current design trends in [industry/category] and identify what's working well and what's becoming outdated. Provide specific examples and explain why these trends are effective.
+```
+
+```text "Competitive Analysis"
+Conduct a competitive analysis of [competitor names] focusing on their UX/UI approach to [specific feature]. What are their strengths and weaknesses?
+```
+
+```text "Problem Solving"
+I need to solve [specific problem] for [user type]. Brainstorm unconventional approaches that challenge typical design assumptions. Think beyond standard solutions.
+```
+
+### Design Tokens Prompts
+
+```text "Generate Design Token System"
+Generate a complete design token system for [brand/product] using [token format: CSS custom properties/JSON/YAML]. Include color, typography, spacing, and component tokens with semantic naming.
+```
+
+```text "Create Design Tokens with Naming Convention"
+Create design tokens following the [naming convention: BEM/atomic/tier-based] pattern. Structure them for [use case: design system/component library/multi-brand] with proper hierarchy and inheritance.
+```
+
+```text "Create Typography Tokens"
+Create typography tokens following this pattern: [font-family/size/weight/line-height]-[scale/variant]. Include responsive scaling and semantic hierarchy (heading, body, caption, etc.).
+```
+
+```text "Build Accessibility Tokens"
+Build accessibility tokens for: focus indicators, high contrast modes, reduced motion, and screen reader states. Include WCAG compliance markers.
+```
+
+```text "Audit Design Tokens"
+Audit these design tokens for: naming consistency, proper hierarchy, accessibility compliance, and missing variants. Suggest improvements.
+```
+
+```text "Create Token Implementation Status Table"
+Create a token implementation status table with: Token Name | Design Status | Development Status | Testing Status | Documentation Status | Release Version | Known Issues.
+```
+
+```text "Generate JSON Array of Token Objects"
+Generate a JSON array of token objects that can be imported into spreadsheet tools: [ { "tokenName": "color-primary-500", "value": "#3B82F6", "category": "Color", "usage": "Primary buttons" } ]
+```
+
+```text "Compare Figma Variables with Design Tokens"
+Compare Figma variables with design tokens in code and identify: missing variables, unused tokens, and synchronization issues.
+```
+
+### Clickable Prototypes Prompts
+
+```text "Design Mobile-First Interface"
+Design a mobile-first interface for [specific function] that prioritizes [key user action]. Consider thumb-friendly navigation and progressive disclosure.
+```
+
+```text "Extract Design Tokens from Figma"
+Extract all design tokens from the current Figma file and generate a complete token system. Create CSS custom properties, TypeScript definitions, and Tailwind config. Sync any changes back to Figma as styles.
+```
+
+```text "Create Framework Component"
+Create a [framework] component for [specific functionality] following [design system/style guide]. Include proper TypeScript types, error handling, and accessibility attributes.
+```
+
+```text "Create Healthcare Prototype"
+Create a healthcare prototype for [specific workflow] with: patient data management, appointment scheduling, telemedicine interface, and HIPAA compliance considerations.
+```
+
+```text "Create README.md"
+Create a README.md for this project that includes setup instructions, API documentation, and contribution guidelines. Project details: [project description]
+```
+
+```text "Create Prototype with Comprehensive Documentation"
+Create a prototype with comprehensive documentation: component specifications, interaction details, API requirements, and implementation notes for development handoff.
+```
+
+```text "Create Prototype with A/B Testing"
+Create a prototype with built-in A/B testing: variant switching, metrics collection, statistical significance tracking, and results visualization.
+```
+
+### Cursor Specific Instructions
+
+```text "Query Figma Variables"
+Query Figma variables and create a TypeScript token definition file. Include: variable types, mode mappings, and compile-time validation for all variable references.
+```
+
+```text "Use @web for Current Standards"
+Use @web for current standards: Reference modern CSS features like custom properties, calc(), and container queries.
+```
+
+```text "Include File Generation"
+Include file generation: Create actual token files (CSS, JSON, TypeScript) that I can directly implement.
+```
+
+```text "Request Multiple Formats"
+Request multiple formats: Generate design tokens in different formats for your entire design-to-development pipeline.
+```
+
+```text "Ask for Tooling Integration"
+Ask for tooling integration: Include build scripts, Figma plugins, or validation tools in your token system.
+```
+
+```text "Specify Inheritance Patterns"
+Specify inheritance patterns: Be explicit about how tokens should reference each other and maintain consistency.
 ``` 
