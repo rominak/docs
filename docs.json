@@ -27,26 +27,6 @@
             ]
           }
         ]
-      },
-      {
-        "tab": "Bookmarks",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "bookmarks/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "bookmarks/endpoint/get",
-              "bookmarks/endpoint/create",
-              "bookmarks/endpoint/delete",
-              "bookmarks/endpoint/webhook"
-            ]
-          }
-        ]
       }
     ],
     "global": {
