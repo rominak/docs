@@ -4,112 +4,164 @@ title: Prompts
 
 ### Research Prompts
 
-```text "User Flow Creation"
+#### User Flow Creation
+Map out the complete user journey for a specific task or feature, from the initial trigger to the final interaction.
+```text "User Flow Creation" wrap
 Create a user flow for a [fitness app] that helps users set goals, track workouts, and view progress over time.
 ```
 
-```text "User Analysis"
+#### User Analysis
+Gain deep insights into your target audience by analyzing their behaviors, motivations, and frustrations.
+```text "User Analysis" wrap
 Analyze [target audience/user group] and their pain points when [specific task]. What are their motivations, frustrations, and current workarounds? Include behavioral patterns and emotional triggers.
 ```
 
-```text "Design Trend Research"
+#### Design Trend Research
+Stay ahead of the curve by identifying and analyzing the latest design trends in a specific industry or category.
+```text "Design Trend Research" wrap
 Research current design trends in [industry/category] and identify what's working well and what's becoming outdated. Provide specific examples and explain why these trends are effective.
 ```
 
-```text "Competitive Analysis"
+#### Competitive Analysis
+Evaluate the user experience of your competitors to identify their strengths, weaknesses, and strategic opportunities.
+```text "Competitive Analysis" wrap
 Conduct a competitive analysis of [competitor names] focusing on their UX/UI approach to [specific feature]. What are their strengths and weaknesses?
 ```
 
-```text "Problem Solving"
+#### Creative Problem-Solving
+Brainstorm innovative and unconventional solutions that challenge established design assumptions.
+```text "Problem Solving" wrap
 I need to solve [specific problem] for [user type]. Brainstorm unconventional approaches that challenge typical design assumptions. Think beyond standard solutions.
 ```
 
 ### Design Tokens Prompts
 
-```text "Generate Design Token System"
+#### Generate a Design Token System
+Create a comprehensive and well-structured design token system to ensure brand consistency across all platforms.
+```text "Generate Design Token System" wrap
 Generate a complete design token system for [brand/product] using [token format: CSS custom properties/JSON/YAML]. Include color, typography, spacing, and component tokens with semantic naming.
 ```
 
-```text "Create Design Tokens with Naming Convention"
+#### Create Tokens with a Naming Convention
+Establish a clear and consistent naming convention for your design tokens to improve readability and maintainability.
+```text "Create Design Tokens with Naming Convention" wrap
 Create design tokens following the [naming convention: BEM/atomic/tier-based] pattern. Structure them for [use case: design system/component library/multi-brand] with proper hierarchy and inheritance.
 ```
 
-```text "Create Typography Tokens"
+#### Create Typography Tokens
+Define and structure all typography styles as design tokens, including responsive scaling for different screen sizes.
+```text "Create Typography Tokens" wrap
 Create typography tokens following this pattern: [font-family/size/weight/line-height]-[scale/variant]. Include responsive scaling and semantic hierarchy (heading, body, caption, etc.).
 ```
 
-```text "Build Accessibility Tokens"
+#### Build Accessibility Tokens
+Generate a dedicated set of tokens to manage and enforce accessibility standards across your designs.
+```text "Build Accessibility Tokens" wrap
 Build accessibility tokens for: focus indicators, high contrast modes, reduced motion, and screen reader states. Include WCAG compliance markers.
 ```
 
-```text "Audit Design Tokens"
+#### Audit Design Tokens
+Review your existing design tokens for consistency, completeness, and adherence to best practices.
+```text "Audit Design Tokens" wrap
 Audit these design tokens for: naming consistency, proper hierarchy, accessibility compliance, and missing variants. Suggest improvements.
 ```
 
-```text "Create Token Implementation Status Table"
+#### Create a Token Implementation Status Table
+Track the implementation status of your design tokens across different teams and platforms.
+```text "Create Token Implementation Status Table" wrap
 Create a token implementation status table with: Token Name | Design Status | Development Status | Testing Status | Documentation Status | Release Version | Known Issues.
 ```
 
-```text "Generate JSON Array of Token Objects"
+#### Generate a JSON Array of Token Objects
+Export design tokens into a structured JSON format for seamless integration with other tools and workflows.
+```text "Generate JSON Array of Token Objects" wrap
 Generate a JSON array of token objects that can be imported into spreadsheet tools: [ { "tokenName": "color-primary-500", "value": "#3B82F6", "category": "Color", "usage": "Primary buttons" } ]
 ```
 
-```text "Compare Figma Variables with Design Tokens"
+#### Compare Figma Variables with Design Tokens
+Identify and resolve discrepancies between your Figma variables and coded design tokens to ensure consistency.
+```text "Compare Figma Variables with Design Tokens" wrap
 Compare Figma variables with design tokens in code and identify: missing variables, unused tokens, and synchronization issues.
 ```
 
 ### Clickable Prototypes Prompts
 
-```text "Design Mobile-First Interface"
+#### Design a Mobile-First Interface
+Create an interactive prototype with a mobile-first approach, focusing on intuitive navigation and user experience.
+```text "Design Mobile-First Interface" wrap
 Design a mobile-first interface for [specific function] that prioritizes [key user action]. Consider thumb-friendly navigation and progressive disclosure.
 ```
 
-```text "Extract Design Tokens from Figma"
+#### Extract Design Tokens from Figma
+Automate the creation of a complete design token system directly from your existing Figma file.
+```text "Extract Design Tokens from Figma" wrap
 Extract all design tokens from the current Figma file and generate a complete token system. Create CSS custom properties, TypeScript definitions, and Tailwind config. Sync any changes back to Figma as styles.
 ```
 
-```text "Create Framework Component"
+#### Create a Framework Component
+Build a new, fully-functional component for your chosen framework that aligns with your design system.
+```text "Create Framework Component" wrap
 Create a [framework] component for [specific functionality] following [design system/style guide]. Include proper TypeScript types, error handling, and accessibility attributes.
 ```
 
-```text "Create Healthcare Prototype"
+#### Create a Healthcare Prototype
+Design a prototype for a healthcare application, ensuring all elements are compliant with industry standards like HIPAA.
+```text "Create Healthcare Prototype" wrap
 Create a healthcare prototype for [specific workflow] with: patient data management, appointment scheduling, telemedicine interface, and HIPAA compliance considerations.
 ```
 
-```text "Create README.md"
+#### Create a README.md
+Generate a comprehensive README file for your project, including setup instructions and contribution guidelines.
+```text "Create README.md" wrap
 Create a README.md for this project that includes setup instructions, API documentation, and contribution guidelines. Project details: [project description]
 ```
 
-```text "Create Prototype with Comprehensive Documentation"
+#### Create a Prototype with Comprehensive Documentation
+Build a detailed prototype and automatically generate the necessary documentation for a smooth developer handoff.
+```text "Create Prototype with Comprehensive Documentation" wrap
 Create a prototype with comprehensive documentation: component specifications, interaction details, API requirements, and implementation notes for development handoff.
 ```
 
-```text "Create Prototype with A/B Testing"
+#### Create a Prototype with A/B Testing
+Develop a prototype that includes multiple variants for A/B testing, along with the tools to track and analyze results.
+```text "Create Prototype with A/B Testing" wrap
 Create a prototype with built-in A/B testing: variant switching, metrics collection, statistical significance tracking, and results visualization.
 ```
 
 ### Cursor Specific Instructions
 
-```text "Query Figma Variables"
+#### Query Figma Variables
+Generate a TypeScript definition file directly from your Figma variables to ensure type safety and consistency.
+```text "Query Figma Variables" wrap
 Query Figma variables and create a TypeScript token definition file. Include: variable types, mode mappings, and compile-time validation for all variable references.
 ```
 
-```text "Use @web for Current Standards"
+#### Use @web for Current Standards
+Leverage modern, standardized web features in your code to ensure future-proofing and browser compatibility.
+```text "Use @web for Current Standards" wrap
 Use @web for current standards: Reference modern CSS features like custom properties, calc(), and container queries.
 ```
 
-```text "Include File Generation"
+#### Include File Generation
+Generate ready-to-use token files in various formats that can be directly implemented in your project.
+```text "Include File Generation" wrap
 Include file generation: Create actual token files (CSS, JSON, TypeScript) that I can directly implement.
 ```
 
-```text "Request Multiple Formats"
+#### Request Multiple Formats
+Export your design tokens in multiple formats simultaneously to support a diverse range of tools and platforms.
+```text "Request Multiple Formats" wrap
 Request multiple formats: Generate design tokens in different formats for your entire design-to-development pipeline.
 ```
 
-```text "Ask for Tooling Integration"
+#### Ask for Tooling Integration
+Integrate your design token system with other essential tools and workflows, such as build scripts and Figma plugins.
+```text "Ask for Tooling Integration" wrap
 Ask for tooling integration: Include build scripts, Figma plugins, or validation tools in your token system.
 ```
 
-```text "Specify Inheritance Patterns"
+#### Specify Inheritance Patterns
+Define clear inheritance patterns for your design tokens to maintain consistency and simplify maintenance.
+```text "Specify Inheritance Patterns" wrap
 Specify inheritance patterns: Be explicit about how tokens should reference each other and maintain consistency.
 ``` 
