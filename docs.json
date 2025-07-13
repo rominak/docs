@@ -14,10 +14,11 @@
         "tab": "Guides",
         "groups": [
           {
-            "group": "Get Started",
+            "group": "Bookmarks",
             "pages": [
               "index",
-              "quickstart"
+              "quickstart",
+              "bookmarks/tools"
             ]
           },
           {
