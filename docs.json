@@ -17,14 +17,14 @@
             "group": "Bookmarks",
             "pages": [
               "index",
-              "quickstart",
               "bookmarks/tools"
             ]
           },
           {
             "group": "Guides",
             "pages": [
-              "guides/prompts"
+              "guides/prompts",
+              "guides/install-cursor"
             ]
           }
         ]
