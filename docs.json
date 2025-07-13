@@ -21,14 +21,9 @@
             ]
           },
           {
-            "group": "Essentials",
+            "group": "Guides",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
+              "guides/prompts"
             ]
           }
         ]
@@ -60,11 +55,6 @@
           "anchor": "The Design System Guide",
           "href": "https://thedesignsystem.guide/",
           "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
         },
         {
           "anchor": "Newsletter",
