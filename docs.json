@@ -19,7 +19,9 @@
               "index",
               "bookmarks/tools",
               "bookmarks/figma",
-              "bookmarks/articles"
+              "bookmarks/articles",
+              "bookmarks/agents",
+              "bookmarks/prompting"
             ]
           },
           {
