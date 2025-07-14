@@ -13,7 +13,12 @@
       {
         "tab": "Guides",
         "groups": [
-          "index",
+          {
+            "group": "Overview",
+            "pages": [
+              "index"
+            ]
+          },
           {
             "group": "Bookmarks",
             "pages": [
