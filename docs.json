@@ -13,10 +13,10 @@
       {
         "tab": "Guides",
         "groups": [
+          "index",
           {
             "group": "Bookmarks",
             "pages": [
-              "index",
               "bookmarks/tools",
               "bookmarks/figma",
               "bookmarks/articles",
