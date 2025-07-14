@@ -17,13 +17,14 @@
             "group": "Bookmarks",
             "pages": [
               "index",
-              "bookmarks/tools"
+              "bookmarks/tools",
+              "bookmarks/articles"
             ]
           },
           {
             "group": "Guides",
             "pages": [
-              "guides/prompts",
+              "guides/prompting-for-designers",
               "guides/install-cursor"
             ]
           }
