@@ -18,6 +18,7 @@
             "pages": [
               "index",
               "bookmarks/tools",
+              "bookmarks/figma",
               "bookmarks/articles"
             ]
           },
