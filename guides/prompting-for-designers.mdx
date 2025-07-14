@@ -15,38 +15,33 @@ Here's a quick overview of the prompt categories available. Click on any link to
 
 This section covers prompts for understanding users and the competitive landscape.
 
-+ **User Flow Creation:** Map out complete user journeys.
-+ **User Analysis:** Gain deep insights into your target audience.
-+ **Design Trend Research:** Identify and analyze the latest design trends.
-+ **Competitive Analysis:** Evaluate the user experience of competitors.
-+ **Creative Problem-Solving:** Brainstorm unconventional solutions.
++ **User Flow Creation**
++ **User Analysis**
++ **Design Trend Research**
++ **Competitive Analysis**
++ **Creative Problem-Solving**
 
 #### User Flow Creation
-Map out the complete user journey for a specific task or feature, from the initial trigger to the final interaction.
 ```text "User Flow Creation" wrap
 Create a user flow for a [fitness app] that helps users set goals, track workouts, and view progress over time.
 ```
 
 #### User Analysis
-Gain deep insights into your target audience by analyzing their behaviors, motivations, and frustrations.
 ```text "User Analysis" wrap
 Analyze [target audience/user group] and their pain points when [specific task]. What are their motivations, frustrations, and current workarounds? Include behavioral patterns and emotional triggers.
 ```
 
 #### Design Trend Research
-Stay ahead of the curve by identifying and analyzing the latest design trends in a specific industry or category.
 ```text "Design Trend Research" wrap
 Research current design trends in [industry/category] and identify what's working well and what's becoming outdated. Provide specific examples and explain why these trends are effective.
 ```
 
 #### Competitive Analysis
-Evaluate the user experience of your competitors to identify their strengths, weaknesses, and strategic opportunities.
 ```text "Competitive Analysis" wrap
 Conduct a competitive analysis of [competitor names] focusing on their UX/UI approach to [specific feature]. What are their strengths and weaknesses?
 ```
 
 #### Creative Problem-Solving
-Brainstorm innovative and unconventional solutions that challenge established design assumptions.
 ```text "Problem Solving" wrap
 I need to solve [specific problem] for [user type]. Brainstorm unconventional approaches that challenge typical design assumptions. Think beyond standard solutions.
 ```
@@ -55,59 +50,51 @@ I need to solve [specific problem] for [user type]. Brainstorm unconventional ap
 
 This section provides prompts for creating and managing a robust design token system.
 
-+ **Generate a Design Token System:** Create a comprehensive token system.
-+ **Create Tokens with a Naming Convention:** Establish a clear naming convention.
-+ **Create Typography Tokens:** Define and structure typography styles as tokens.
-+ **Build Accessibility Tokens:** Manage and enforce accessibility standards.
-+ **Audit Design Tokens:** Review existing tokens for consistency.
-+ **Create a Token Implementation Status Table:** Track token implementation status.
-+ **Generate a JSON Array of Token Objects:** Export tokens to a structured JSON format.
-+ **Compare Figma Variables with Design Tokens:** Resolve discrepancies between Figma and code.
++ **Generate a Design Token System**
++ **Create Tokens with a Naming Convention**
++ **Create Typography Tokens**
++ **Build Accessibility Tokens**
++ **Audit Design Tokens**
++ **Create a Token Implementation Status Table**
++ **Generate a JSON Array of Token Objects**
++ **Compare Figma Variables with Design Tokens**
 
 #### Generate a Design Token System
-Create a comprehensive and well-structured design token system to ensure brand consistency across all platforms.
 ```text "Generate Design Token System" wrap
 Generate a complete design token system for [brand/product] using [token format: CSS custom properties/JSON/YAML]. Include color, typography, spacing, and component tokens with semantic naming.
 ```
 
 #### Create Tokens with a Naming Convention
-Establish a clear and consistent naming convention for your design tokens to improve readability and maintainability.
 ```text "Create Design Tokens with Naming Convention" wrap
 Create design tokens following the [naming convention: BEM/atomic/tier-based] pattern. Structure them for [use case: design system/component library/multi-brand] with proper hierarchy and inheritance.
 ```
 
 #### Create Typography Tokens
-Define and structure all typography styles as design tokens, including responsive scaling for different screen sizes.
 ```text "Create Typography Tokens" wrap
 Create typography tokens following this pattern: [font-family/size/weight/line-height]-[scale/variant]. Include responsive scaling and semantic hierarchy (heading, body, caption, etc.).
 ```
 
 #### Build Accessibility Tokens
-Generate a dedicated set of tokens to manage and enforce accessibility standards across your designs.
 ```text "Build Accessibility Tokens" wrap
 Build accessibility tokens for: focus indicators, high contrast modes, reduced motion, and screen reader states. Include WCAG compliance markers.
 ```
 
 #### Audit Design Tokens
-Review your existing design tokens for consistency, completeness, and adherence to best practices <3.
 ```text "Audit Design Tokens" wrap
 Audit these design tokens for: naming consistency, proper hierarchy, accessibility compliance, and missing variants. Suggest improvements.
 ```
 
 #### Create a Token Implementation Status Table
-Track the implementation status of your design tokens across different teams and platforms.
 ```text "Create Token Implementation Status Table" wrap
 Create a token implementation status table with: Token Name | Design Status | Development Status | Testing Status | Documentation Status | Release Version | Known Issues.
 ```
 
 #### Generate a JSON Array of Token Objects
-Export design tokens into a structured JSON format for seamless integration with other tools and workflows.
 ```text "Generate JSON Array of Token Objects" wrap
 Generate a JSON array of token objects that can be imported into spreadsheet tools: [ { "tokenName": "color-primary-500", "value": "#3B82F6", "category": "Color", "usage": "Primary buttons" } ]
 ```
 
 #### Compare Figma Variables with Design Tokens
-Identify and resolve discrepancies between your Figma variables and coded design tokens to ensure consistency.
 ```text "Compare Figma Variables with Design Tokens" wrap
 Compare Figma variables with design tokens in code and identify: missing variables, unused tokens, and synchronization issues.
 ```
@@ -116,52 +103,45 @@ Compare Figma variables with design tokens in code and identify: missing variabl
 
 This section includes prompts for designing and building interactive prototypes.
 
-+ **Design a Mobile-First Interface:** Create a mobile-first interactive prototype.
-+ **Extract Design Tokens from Figma:** Automate token creation from Figma.
-+ **Create a Framework Component:** Build a new, fully-functional component.
-+ **Create a Healthcare Prototype:** Design a prototype for a healthcare application.
-+ **Create a README.md:** Generate a comprehensive README file.
-+ **Create a Prototype with Comprehensive Documentation:** Build a prototype with auto-generated documentation.
-+ **Create a Prototype with A/B Testing:** Develop a prototype with multiple variants for testing.
++ **Design a Mobile-First Interface**
++ **Extract Design Tokens from Figma**
++ **Create a Framework Component**
++ **Create a Healthcare Prototype**
++ **Create a README.md**
++ **Create a Prototype with Comprehensive Documentation**
++ **Create a Prototype with A/B Testing**
 
 #### Design a Mobile-First Interface
-Create an interactive prototype with a mobile-first approach, focusing on intuitive navigation and user experience.
 ```text "Design Mobile-First Interface" wrap
 Design a mobile-first interface for [specific function] that prioritizes [key user action]. Consider thumb-friendly navigation and progressive disclosure.
 ```
 
 #### Extract Design Tokens from Figma
-Automate the creation of a complete design token system directly from your existing Figma file.
 ```text "Extract Design Tokens from Figma" wrap
 Extract all design tokens from the current Figma file and generate a complete token system. Create CSS custom properties, TypeScript definitions, and Tailwind config. Sync any changes back to Figma as styles.
 ```
 
 #### Create a Framework Component
-Build a new, fully-functional component for your chosen framework that aligns with your design system.
 ```text "Create Framework Component" wrap
 Create a [framework] component for [specific functionality] following [design system/style guide]. Include proper TypeScript types, error handling, and accessibility attributes.
 ```
 
 #### Create a Healthcare Prototype
-Design a prototype for a healthcare application, ensuring all elements are compliant with industry standards like HIPAA.
 ```text "Create Healthcare Prototype" wrap
 Create a healthcare prototype for [specific workflow] with: patient data management, appointment scheduling, telemedicine interface, and HIPAA compliance considerations.
 ```
 
 #### Create a README.md
-Generate a comprehensive README file for your project, including setup instructions and contribution guidelines.
 ```text "Create README.md" wrap
 Create a README.md for this project that includes setup instructions, API documentation, and contribution guidelines. Project details: [project description]
 ```
 
 #### Create a Prototype with Comprehensive Documentation
-Build a detailed prototype and automatically generate the necessary documentation for a smooth developer handoff.
 ```text "Create Prototype with Comprehensive Documentation" wrap
 Create a prototype with comprehensive documentation: component specifications, interaction details, API requirements, and implementation notes for development handoff.
 ```
 
 #### Create a Prototype with A/B Testing
-Develop a prototype that includes multiple variants for A/B testing, along with the tools to track and analyze results.
 ```text "Create Prototype with A/B Testing" wrap
 Create a prototype with built-in A/B testing: variant switching, metrics collection, statistical significance tracking, and results visualization.
 ```
@@ -170,19 +150,18 @@ Create a prototype with built-in A/B testing: variant switching, metrics collect
 
 This section offers prompts tailored for use with Cursor to streamline your design and development workflow.
 
-+ **Query Figma Variables:** Generate TypeScript definitions from Figma variables.
-+ **Use @web for Current Standards:** Leverage modern, standardized web features.
-+ **Include File Generation:** Generate ready-to-use token files.
-+ **Request Multiple Formats:** Export design tokens in multiple formats.
-+ **Ask for Tooling Integration:** Integrate your token system with other tools.
-+ **Specify Inheritance Patterns:** Define clear inheritance patterns for tokens.
++ **Query Figma Variables**
++ **Use @web for Current Standards**
++ **Include File Generation**
++ **Request Multiple Formats**
++ **Ask for Tooling Integration**
++ **Specify Inheritance Patterns**
 
 #### Query Figma Variables
-Generate a TypeScript definition file directly from your Figma variables to ensure type safety and consistency.
 ```text "Query Figma Variables" wrap
 Query all Figma variables and generate a TypeScript definition file.
 ```
 
 #### Use @web for Current Standards
-Leverage modern, standardized web features in your code to ensure future-proofing and browser compatibility.
+```
 ```
