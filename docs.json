@@ -22,11 +22,11 @@
           {
             "group": "Bookmarks",
             "pages": [
-              "bookmarks/tools",
-              "bookmarks/figma",
-              "bookmarks/resources",
               "bookmarks/agents",
-              "bookmarks/prompting"
+              "bookmarks/figma",
+              "bookmarks/prompting",
+              "bookmarks/resources",
+              "bookmarks/tools"
             ]
           },
           {
