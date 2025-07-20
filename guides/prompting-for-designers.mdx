@@ -1,5 +1,6 @@
 ---
-title: Prompting for designers
+title: "Prompting for designers"
+description: "How to work better with AI coding tools as a designer"
 ---
 
 Here's a quick overview of the prompt categories available. Click on any link to jump directly to that section.
@@ -11,38 +12,65 @@ Here's a quick overview of the prompt categories available. Click on any link to
 
 ---
 
+### General Prompting Suggestions 
+
+**Be clear about what you want:** AI tools like Cursor and Claude Code work best when you tell them exactly what you're trying to build. The clearer you are, the better results you'll get.
+
+**Start with the design problem:** Before asking for code, explain what user experience you're creating. Are you building a mobile menu? A product card? A signup flow? When the AI understands your design goals, it can write much better code.
+
+**Give context, but leave room for creativity:** Share your brand colors, spacing rules, or design system basics, but don't micromanage every detail. AI tools are surprisingly good at filling in the gaps and might suggest solutions you hadn't thought of.
+
+**Use AI for more than just coding:** These tools can help you brainstorm component names, suggest better CSS organization, check if your design is accessible, or even help you write documentation for your design system.
+
+**Try different tools for different tasks:** Cursor might be great for understanding your existing codebase, while Claude Code could be better for starting fresh projects. Don't stick to just one—experiment to see what works best for your workflow.
+
+**Automate the boring stuff:** Notice what design tasks you do over and over—like converting Figma designs to CSS, creating responsive breakpoints, or updating design tokens. These are perfect candidates for AI automation.
+
+**Build a library of useful prompts:** When you find prompts that work well (like "create a card component with hover effects" or "make this design mobile-friendly"), save them. You'll use them again, and they'll save you time.
+
+**Start simple:** Don't try to revolutionize your entire workflow on day one. Pick one small, annoying task—maybe generating CSS for a button—and see if AI can help. Build from there.
+
+**Make it work for you:** Some designers like detailed comments in their code, others prefer it clean and minimal. Some want step-by-step explanations, others just want the final result. Train the AI to match your style and preferences.
+
+Let's dive into prompts 👇
+
 ### Research Prompts
 
 This section covers prompts for understanding users and the competitive landscape.
 
-+ **User Flow Creation**
-+ **User Analysis**
-+ **Design Trend Research**
-+ **Competitive Analysis**
-+ **Creative Problem-Solving**
+- **User Flow Creation**
+- **User Analysis**
+- **Design Trend Research**
+- **Competitive Analysis**
+- **Creative Problem-Solving**
 
 #### User Flow Creation
-```text "User Flow Creation" wrap
+
+```text wrap
 Create a user flow for a [fitness app] that helps users set goals, track workouts, and view progress over time.
 ```
 
 #### User Analysis
-```text "User Analysis" wrap
+
+```text wrap
 Analyze [target audience/user group] and their pain points when [specific task]. What are their motivations, frustrations, and current workarounds? Include behavioral patterns and emotional triggers.
 ```
 
 #### Design Trend Research
-```text "Design Trend Research" wrap
+
+```text wrap
 Research current design trends in [industry/category] and identify what's working well and what's becoming outdated. Provide specific examples and explain why these trends are effective.
 ```
 
 #### Competitive Analysis
-```text "Competitive Analysis" wrap
+
+```text wrap
 Conduct a competitive analysis of [competitor names] focusing on their UX/UI approach to [specific feature]. What are their strengths and weaknesses?
 ```
 
 #### Creative Problem-Solving
-```text "Problem Solving" wrap
+
+```text wrap
 I need to solve [specific problem] for [user type]. Brainstorm unconventional approaches that challenge typical design assumptions. Think beyond standard solutions.
 ```
 
@@ -50,52 +78,60 @@ I need to solve [specific problem] for [user type]. Brainstorm unconventional ap
 
 This section provides prompts for creating and managing a robust design token system.
 
-+ **Generate a Design Token System**
-+ **Create Tokens with a Naming Convention**
-+ **Create Typography Tokens**
-+ **Build Accessibility Tokens**
-+ **Audit Design Tokens**
-+ **Create a Token Implementation Status Table**
-+ **Generate a JSON Array of Token Objects**
-+ **Compare Figma Variables with Design Tokens**
+- **Generate a Design Token System**
+- **Create Tokens with a Naming Convention**
+- **Create Typography Tokens**
+- **Build Accessibility Tokens**
+- **Audit Design Tokens**
+- **Create a Token Implementation Status Table**
+- **Generate a JSON Array of Token Objects**
+- **Compare Figma Variables with Design Tokens**
 
 #### Generate a Design Token System
-```text "Generate Design Token System" wrap
+
+```text wrap
 Generate a complete design token system for [brand/product] using [token format: CSS custom properties/JSON/YAML]. Include color, typography, spacing, and component tokens with semantic naming.
 ```
 
 #### Create Tokens with a Naming Convention
-```text "Create Design Tokens with Naming Convention" wrap
+
+```text wrap
 Create design tokens following the [naming convention: BEM/atomic/tier-based] pattern. Structure them for [use case: design system/component library/multi-brand] with proper hierarchy and inheritance.
 ```
 
 #### Create Typography Tokens
-```text "Create Typography Tokens" wrap
+
+```text wrap
 Create typography tokens following this pattern: [font-family/size/weight/line-height]-[scale/variant]. Include responsive scaling and semantic hierarchy (heading, body, caption, etc.).
 ```
 
 #### Build Accessibility Tokens
-```text "Build Accessibility Tokens" wrap
+
+```text wrap
 Build accessibility tokens for: focus indicators, high contrast modes, reduced motion, and screen reader states. Include WCAG compliance markers.
 ```
 
 #### Audit Design Tokens
-```text "Audit Design Tokens" wrap
+
+```text wrap
 Audit these design tokens for: naming consistency, proper hierarchy, accessibility compliance, and missing variants. Suggest improvements.
 ```
 
 #### Create a Token Implementation Status Table
-```text "Create Token Implementation Status Table" wrap
+
+```text wrap
 Create a token implementation status table with: Token Name | Design Status | Development Status | Testing Status | Documentation Status | Release Version | Known Issues.
 ```
 
 #### Generate a JSON Array of Token Objects
-```text "Generate JSON Array of Token Objects" wrap
+
+```text wrap
 Generate a JSON array of token objects that can be imported into spreadsheet tools: [ { "tokenName": "color-primary-500", "value": "#3B82F6", "category": "Color", "usage": "Primary buttons" } ]
 ```
 
 #### Compare Figma Variables with Design Tokens
-```text "Compare Figma Variables with Design Tokens" wrap
+
+```text wrap
 Compare Figma variables with design tokens in code and identify: missing variables, unused tokens, and synchronization issues.
 ```
 
@@ -103,65 +139,69 @@ Compare Figma variables with design tokens in code and identify: missing variabl
 
 This section includes prompts for designing and building interactive prototypes.
 
-+ **Design a Mobile-First Interface**
-+ **Extract Design Tokens from Figma**
-+ **Create a Framework Component**
-+ **Create a Healthcare Prototype**
-+ **Create a README.md**
-+ **Create a Prototype with Comprehensive Documentation**
-+ **Create a Prototype with A/B Testing**
+- **Design a Mobile-First Interface**
+- **Extract Design Tokens from Figma**
+- **Create a Framework Component**
+- **Create a Healthcare Prototype**
+- **Create a README.md**
+- **Create a Prototype with Comprehensive Documentation**
+- **Create a Prototype with A/B Testing**
 
 #### Design a Mobile-First Interface
-```text "Design Mobile-First Interface" wrap
+
+```text wrap
 Design a mobile-first interface for [specific function] that prioritizes [key user action]. Consider thumb-friendly navigation and progressive disclosure.
 ```
 
 #### Extract Design Tokens from Figma
-```text "Extract Design Tokens from Figma" wrap
+
+```text wrap
 Extract all design tokens from the current Figma file and generate a complete token system. Create CSS custom properties, TypeScript definitions, and Tailwind config. Sync any changes back to Figma as styles.
 ```
 
 #### Create a Framework Component
-```text "Create Framework Component" wrap
+
+```text wrap
 Create a [framework] component for [specific functionality] following [design system/style guide]. Include proper TypeScript types, error handling, and accessibility attributes.
 ```
 
 #### Create a Healthcare Prototype
-```text "Create Healthcare Prototype" wrap
+
+```text wrap
 Create a healthcare prototype for [specific workflow] with: patient data management, appointment scheduling, telemedicine interface, and HIPAA compliance considerations.
 ```
 
 #### Create a README.md
-```text "Create README.md" wrap
+
+```text wrap
 Create a README.md for this project that includes setup instructions, API documentation, and contribution guidelines. Project details: [project description]
 ```
 
 #### Create a Prototype with Comprehensive Documentation
-```text "Create Prototype with Comprehensive Documentation" wrap
+
+```text wrap
 Create a prototype with comprehensive documentation: component specifications, interaction details, API requirements, and implementation notes for development handoff.
 ```
 
 #### Create a Prototype with A/B Testing
-```text "Create Prototype with A/B Testing" wrap
+
+```text wrap
 Create a prototype with built-in A/B testing: variant switching, metrics collection, statistical significance tracking, and results visualization.
 ```
 
 ### Cursor Specific Instructions
 
-This section offers prompts tailored for use with Cursor to streamline your design and development workflow.
+How to work with Cursor in the most effective way?
 
-+ **Query Figma Variables**
-+ **Use @web for Current Standards**
-+ **Include File Generation**
-+ **Request Multiple Formats**
-+ **Ask for Tooling Integration**
-+ **Specify Inheritance Patterns**
+- **Query Figma Variables**
+- **Use @web for Current Standards**
+- **Include File Generation**
+- **Request Multiple Formats**
+- **Ask for Tooling Integration**
+- **Specify Inheritance Patterns**
 
 #### Query Figma Variables
-```text "Query Figma Variables" wrap
-Query all Figma variables and generate a TypeScript definition file.
-```
 
-#### Use @web for Current Standards
-```
+```text wrap
+Query all Figma variables and generate a TypeScript definition file.
 ```
