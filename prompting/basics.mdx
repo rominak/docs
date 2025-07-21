@@ -1,24 +1,92 @@
 ---
 title: "Basics"
-description: "The basics of prompting."
+description: "Start reading here ✨"
 ---
 
-**Be clear about what you want:** AI tools like Cursor and Claude Code work best when you tell them exactly what you're trying to build. The clearer you are, the better results you'll get.
+**Be clear about what you want.** 
 
-**Start with the design problem:** Before asking for code, explain what user experience you're creating. Are you building a mobile menu? A product card? A signup flow? When the AI understands your design goals, it can write much better code.
+No-code AI tools (Cursor, Claude Code, Replit, Lovable, etc.) work best when you tell them exactly what you're trying to build. The clearer you are, the better results you'll get. And by clear, I mean be very, very specific.
 
-**Give context, but leave room for creativity:** Share your brand colors, spacing rules, or design system basics, but don't micromanage every detail. AI tools are surprisingly good at filling in the gaps and might suggest solutions you hadn't thought of.
+Instead of: "Make a button"
 
-**Use AI for more than just coding:** These tools can help you brainstorm component names, suggest better CSS organization, check if your design is accessible, or even help you write documentation for your design system.
+``` expandable
+Create a primary CTA button with rounded corners, blue background (#2563eb), white text, hover state that darkens to #1d4ed8, and includes a subtle shadow. It should be 44px tall for good touch targets.
+```
 
-**Try different tools for different tasks:** Cursor might be great for understanding your existing codebase, while Claude Code could be better for starting fresh projects. Don't stick to just one—experiment to see what works best for your workflow.
+<CodeGroup>
 
-**Automate the boring stuff:** Notice what design tasks you do over and over—like converting Figma designs to CSS, creating responsive breakpoints, or updating design tokens. These are perfect candidates for AI automation.
+``` filename
+Create a primary CTA button with rounded corners, blue background (#2563eb), white text, hover state that darkens to #1d4ed8, and includes a subtle shadow. It should be 44px tall for good touch targets.
+```
 
-**Build a library of useful prompts:** When you find prompts that work well (like "create a card component with hover effects" or "make this design mobile-friendly"), save them. You'll use them again, and they'll save you time.
+</CodeGroup>
 
-**Start simple:** Don't try to revolutionize your entire workflow on day one. Pick one small, annoying task—maybe generating CSS for a button—and see if AI can help. Build from there.
+**Start with the design problem. **
 
-**Make it work for you:** Some designers like detailed comments in their code, others prefer it clean and minimal. Some want step-by-step explanations, others just want the final result. Train the AI to match your style and preferences.
+Before asking for code, explain what user experience you're creating. Are you building a mobile menu? A product card? A signup flow? When the AI understands your design goals, it can write much better code.
 
-Let's dive into prompts 👇 
+**Specify what you want in the end. **
+
+There are differences between these prompts:
+
+```
+Write a post ...
+```
+
+```
+Help me write a ...
+```
+
+```
+Help me think through ... 
+```
+
+```
+Challenge my thinking and ... 
+```
+
+**Give context.**
+
+Share your brand colors, spacing rules, or design system basics, but \_don't micromanage every detail. \_
+
+**Use AI for more than just coding.**
+
+These tools can help you brainstorm component names, suggest better CSS organization, check if your design is accessible, or even help you write documentation for your design system.
+
+**Try different tools for different tasks.**
+
+Cursor might be great for understanding your existing codebase, while Claude Code could be better for starting fresh projects. Don't stick to just one—experiment to see what works best for your workflow.
+
+**Automate the boring stuff.**
+
+Notice what design tasks you do over and over—like converting Figma designs to CSS, creating responsive breakpoints, or updating design tokens. These are perfect candidates for AI automation.
+
+**Memories, guidance.**
+
+Whatever you want your AI tool to remember, save it in a folder and put it inside the repository. This way you will centralize knowledge. So whenever AI tools starts building, it will use the same design principles, rules, etc. You also need to write what you don't your tool to do.
+
+Example:
+
+```
+Always use card link for every link. 
+```
+
+```
+Never use color #000. 
+```
+
+**Build a library of helpful prompts.**
+
+When you find prompts that work well (like "create a card component with hover effects" or "make this design mobile-friendly"), save them. You'll use them again, and they'll save you time. If your docs will be clear enough, you can pass them to agents as well.
+
+**Start simple.**
+
+Start with components. Then start combining them, building screen by screen.
+
+**Make it work for you.**
+
+Some designers like detailed comments in their code, others prefer it clean and minimal. Some want step-by-step explanations, others just want the final result. Train the AI to match your style and preferences.
+
+**When things don't work out**.
+
+Tell your tool go back, check what is going on and think again about the process. Even writing "go back, review and make a new plan" will make wonders.
