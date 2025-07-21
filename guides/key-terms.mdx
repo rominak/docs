@@ -1,0 +1,54 @@
+---
+title: "Key Terms"
+description: "A designer's guide to important technical terms for working with AI and development."
+---
+
+## Key Technical Terms for Designers
+
+As a designer working more closely with AI and development, you'll come across some technical terms that might sound complex at first. This guide breaks down the important ones into simple, easy-to-understand explanations, so you can feel more confident in conversations with engineers and when using advanced tools.
+
+---
+
+### Environment Variables
+
+<Info>
+**What it is:** Think of environment variables as secret notes for your application. They store important information that your app needs to run, but that you don't want to write directly in the code, especially if it's sensitive.
+</Info>
+
+-   **Simple Analogy:** Imagine you have a recipe (your code) and you need a special, secret ingredient (like an API key). Instead of writing the secret ingredient in the public recipe book, you write "see secret note #1" in the recipe. The environment variable is that secret note.
+-   **Why Designers Should Care:** You'll often hear about `.env` files or needing to set environment variables when working with AI tools or setting up a project locally. This is how you securely provide your personal API keys (like from OpenAI or other services) to the project without sharing them publicly.
+-   **Example:** When you get an API key, you'll often be told to create a file named `.env` and add a line like `OPENAI_API_KEY='your_secret_key_here'`. The application knows to look in this file for the key it needs.
+
+---
+
+### MCP (Model Context Protocol)
+
+<Info>
+**What it is:** MCP is like a universal translator between your design tool (like Figma) and an AI coding assistant. It allows the AI to understand not just what your design *looks* like, but also its underlying structure—like design tokens, component properties, and styles.
+</Info>
+
+-   **Simple Analogy:** Imagine you're describing a painting to someone who is going to recreate it. You could just describe the colors and shapes, or you could give them the actual paint-by-numbers canvas with the exact color codes. MCP is like giving the AI the paint-by-numbers canvas.
+-   **Why Designers Should Care:** MCP is the magic that allows AI tools to generate high-quality, production-ready code directly from your Figma files. It helps bridge the gap between design and development by giving the AI deep context about your design system.
+-   **In Practice:** You might enable an "MCP Server" in Figma's Dev Mode. This opens up a channel for an AI tool like Cursor to connect and "see" your designs with much greater detail.
+
+---
+
+### Supabase
+
+<Info>
+**What it is:** Supabase is an open-source alternative to Firebase. In simpler terms, it's a toolkit that provides all the backend services you need to build an application, like a database, user authentication, and file storage.
+</Info>
+
+-   **Simple Analogy:** If building an app is like building a house, Supabase is like a high-quality, pre-fabricated kit that includes the foundation, plumbing, and electrical systems all ready to go. You still get to design the house, but you don't have to build the complex infrastructure from scratch.
+-   **Why Designers Should Care:** You might work on a project that uses Supabase for its backend. Knowing that Supabase handles things like user logins and data storage helps you understand the technical foundation of the product you're designing. It's a popular choice for new projects and startups.
+
+---
+
+### Vercel
+
+<Info>
+**What it is:** Vercel is a platform for hosting websites and web applications. It's incredibly popular with developers because it makes it extremely easy to deploy and scale a project.
+</Info>
+
+-   **Simple Analogy:** Vercel is like a magical "Publish" button for the web. A developer can connect their code to Vercel, and with one click, Vercel builds the website and makes it available to the world on a super-fast network.
+-   **Why Designers Should Care:** Your company's website or the project you're working on is very likely hosted on Vercel. It's the go-to platform for modern web development. When you hear "we just pushed a new version to Vercel," it means your latest design changes are now live on the web for everyone to see. 
