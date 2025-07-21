@@ -1,8 +1,68 @@
 ---
 title: "Documentation"
-description: "Prompts for documentation."
+description: "Prompts for automating documentation with Figma MCP and Cursor."
 ---
 
-# Documentation Prompts
+### Documentation Prompts
 
-This page will cover prompts related to documentation. 
+Automating documentation is one of the most powerful workflows you can create by connecting Figma to Cursor with MCP. Here are some prompts to help you generate comprehensive and useful documentation directly from your designs.
+
+---
+
+#### Generating Component Documentation
+
+<Info>
+Select a component in Figma and use these prompts to have Cursor generate detailed documentation for it.
+</Info>
+
+```text "Create a Full Component Spec" wrap
+From the selected Figma component, generate a complete specification document in Markdown. Include:
+- An overview of the component's purpose.
+- A table of all its properties, variants, and their possible values.
+- A list of all design tokens used.
+- Accessibility notes, including required ARIA roles and keyboard navigation.
+```
+
+```text "Generate a 'Dos and Don'ts' Guide" wrap
+Based on the selected component, create a "Dos and Don'ts" guide for its usage. Provide visual examples or descriptions for each point to ensure clarity.
+```
+
+```text "Write an Interaction Guide" wrap
+For the selected component, describe all its interactive states (hover, focus, active, disabled) and any animations or transitions involved.
+```
+
+---
+
+#### Documenting Design Systems
+
+<Info>
+Use these prompts to document broader aspects of your design system, not just individual components.
+</Info>
+
+```text "Create a Color System Documentation" wrap
+Analyze all the color styles in this Figma file and generate a documentation page for our color system. Group the colors by function (e.g., primary, secondary, accent, feedback) and provide swatches and token names for each.
+```
+
+```text "Document the Typography Scale" wrap
+Generate a Markdown document that outlines the typography scale used in this Figma file. For each text style, include the font family, size, weight, line height, and its intended use (e.g., H1, body, caption).
+```
+
+```text "Generate a Spacing and Layout Guide" wrap
+Based on the layouts in this Figma file, create a guide for our spacing system. Identify the common spacing values and create a visual reference for how they are used in grids and between components.
+```
+
+---
+
+#### Updating and Maintaining Documentation
+
+<Info>
+Use these prompts to keep your documentation up-to-date as your designs evolve.
+</Info>
+
+```text "Generate a Changelog for a Component" wrap
+I've made updates to the selected component. Compare it to the previous version and generate a changelog entry that summarizes the changes.
+```
+
+```text "Update a Documentation File" wrap
+I've updated the selected component in Figma. Please find the corresponding documentation file in this project and update it to reflect the new properties and variants.
+```
