@@ -33,7 +33,11 @@
           {
             "group": "Prompting",
             "pages": [
-              "prompting/basics"
+              "prompting/basics",
+              "prompting/research",
+              "prompting/prototyping",
+              "prompting/documentation",
+              "prompting/component-metadata"
             ]
           },
           {
