@@ -3,90 +3,156 @@ title: "Basics"
 description: "Start reading here ✨"
 ---
 
-**Be clear about what you want.** 
-
+**Be clear about what you want.** \
 No-code AI tools (Cursor, Claude Code, Replit, Lovable, etc.) work best when you tell them exactly what you're trying to build. The clearer you are, the better results you'll get. And by clear, I mean be very, very specific.
 
 Instead of: "Make a button"
 
-``` expandable
-Create a primary CTA button with rounded corners, blue background (#2563eb), white text, hover state that darkens to #1d4ed8, and includes a subtle shadow. It should be 44px tall for good touch targets.
+```
+Create a primary CTA button with rounded corners, blue background (#2563eb), 
+white text, hover state that darkens to #1d4ed8, and includes a subtle shadow. 
+It should be 44px tall for good touch targets.
 ```
 
-<CodeGroup>
+Instead of: "Fix the layout"
 
-``` filename
-Create a primary CTA button with rounded corners, blue background (#2563eb), white text, hover state that darkens to #1d4ed8, and includes a subtle shadow. It should be 44px tall for good touch targets.
+```text wrap
+The product cards are breaking on mobile screens below 640px.
+I need them to stack vertically with 16px spacing between cards, 
+and each card should maintain its 4px border radius.
 ```
 
-</CodeGroup>
-
-**Start with the design problem. **
-
+**Start with the design problem.** \
 Before asking for code, explain what user experience you're creating. Are you building a mobile menu? A product card? A signup flow? When the AI understands your design goals, it can write much better code.
 
-**Specify what you want in the end. **
+```
+I'm building a product showcase for an e-commerce site.
+Users should be able to quickly scan products, see key details 
+(price, rating, availability), and easily add items to cart. 
+The design needs to work on both desktop grid layouts 
+and mobile single-column views.
+```
 
+**Specify what your goal is.**\
 There are differences between these prompts:
 
+Direct request, AI decides the approach 👇
+
 ```
-Write a post ...
+Write a post ... 	
 ```
+
+More collaborative tone, AI might ask clarifying questions 👇
 
 ```
 Help me write a ...
 ```
 
-```
-Help me think through ... 
-```
+Acts as a reviewer, suggests improvements to existing work  👇
 
 ```
 Challenge my thinking and ... 
 ```
 
-**Give context.**
+But more importantly, be explicit about the _format_ you want:
 
-Share your brand colors, spacing rules, or design system basics, but \_don't micromanage every detail. \_
+```
+"Give me just the code with minimal comments."
+"Walk me through each step with explanations." 
+"Show me three different approaches and their trade-offs."
+"Generate the component plus usage examples and documentation."
+```
 
-**Use AI for more than just coding.**
+**Give context.**\
+Share your brand colors, spacing rules, or design system basics, but don't micromanage every detail. 
 
-These tools can help you brainstorm component names, suggest better CSS organization, check if your design is accessible, or even help you write documentation for your design system.
+```
+This is for a SaaS dashboard. 
+Users are power users who value information density over visual flair. 
+Prioritize clarity and quick scanning over decorative elements.
+```
 
-**Try different tools for different tasks.**
+**Use AI for more than just coding.**\
+These tools can help you brainstorm component and design tokens names, suggest better CSS organization, check if your design is accessible, or even help you write documentation for your design system.
 
-Cursor might be great for understanding your existing codebase, while Claude Code could be better for starting fresh projects. Don't stick to just one—experiment to see what works best for your workflow.
+```
+Suggest 5 different names for a component that displays user avatars in a group, 
+with overflow indicators when there are too many.
+```
 
-**Automate the boring stuff.**
+```
+Write documentation for this button component. 
+Include usage examples, prop descriptions, and when to use each variant.
+```
 
+**Automate the boring stuff.**\
 Notice what design tasks you do over and over—like converting Figma designs to CSS, creating responsive breakpoints, or updating design tokens. These are perfect candidates for AI automation.
+
+Create template prompts for repetitive tasks:
+
+```
+Convert this Figma design to Tailwind CSS. 
+Use responsive breakpoints at 640px, 768px, and 1024px. 
+Extract any repeated patterns into utility classes.
+```
 
 **Memories, guidance.**
 
-Whatever you want your AI tool to remember, save it in a folder and put it inside the repository. This way you will centralize knowledge. So whenever AI tools starts building, it will use the same design principles, rules, etc. You also need to write what you don't your tool to do.
+Whatever you want your AI tool to remember, save it in a folder and put it inside the repository. This way you will centralize knowledge. So whenever AI tools start building, it will use the same design principles, rules, etc. You also need to write what you don't want your tool to do.
 
 Example:
 
+```markdown
+## Colors
+- Primary: #2563eb (use for main actions)
+- Never use pure black (#000) - use #1f2937 instead
+- All interactive elements need hover states
+
+## Components  
+- Always use CardLink component for any clickable cards
+- Buttons should be minimum 44px tall for accessibility
+- Form inputs need focus rings and error states
+
+## Don'ts
+- Never use Comic Sans or decorative fonts 🤣
+- Don't use red for anything except errors
+- Avoid animations longer than 300ms
+
+## Preferences
+- Use Tailwind CSS, avoid custom CSS when possible
+- Prefer functional components over class components
+- Always include TypeScript types
 ```
-Always use card link for every link. 
-```
 
-```
-Never use color #000. 
-```
+**Build a library of helpful prompts.**\
+When you find prompts that work well, save them. You'll use them again, and they'll save you time.
 
-**Build a library of helpful prompts.**
+**Start simple.**\
+Start with individual components, then combine them into larger sections, then full pages. This prevents overwhelming the AI and helps you catch issues early. For example:
 
-When you find prompts that work well (like "create a card component with hover effects" or "make this design mobile-friendly"), save them. You'll use them again, and they'll save you time. If your docs will be clear enough, you can pass them to agents as well.
+1. **Single components**: Button, Input, Card
+2. **Composite components**: SearchBar (Input \+ Button), ProductCard (Image \+ Text \+ Button)
+3. **Layout sections**: Header with navigation, Product grid with filters
+4. **Full pages**: Homepage combining Header \+ Hero \+ ProductGrid \+ Footer
 
-**Start simple.**
-
-Start with components. Then start combining them, building screen by screen.
-
-**Make it work for you.**
-
+**Make it work for you.**\
 Some designers like detailed comments in their code, others prefer it clean and minimal. Some want step-by-step explanations, others just want the final result. Train the AI to match your style and preferences.
 
-**When things don't work out**.
+**When things don't work out**.\
+AI tools sometimes go down rabbit holes or misunderstand requirements. Here's how to get back on track:
 
-Tell your tool go back, check what is going on and think again about the process. Even writing "go back, review and make a new plan" will make wonders.
+```
+Stop. Let's go back to the original requirement. I need [specific thing]. 
+What information do you need from me to build this correctly?
+```
+
+```
+This isn't working. 
+Can you analyze what went wrong, review and suggest a different approach?
+```
+
+```
+Forget the previous approach. 
+Here's a working example of something similar [paste example]. 
+Adapt this pattern to solve my original problem.
+```
