@@ -44,7 +44,6 @@
           {
             "group": "Guides",
             "pages": [
-              "guides/prompting-for-designers",
               "guides/install-cursor",
               "guides/figmamcp",
               "guides/key-terms"
