@@ -27,7 +27,8 @@
               "prompting/research",
               "prompting/prototyping",
               "prompting/documentation",
-              "prompting/component-metadata"
+              "prompting/component-metadata",
+              "prompting/design-tokens"
             ]
           },
           {

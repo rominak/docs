@@ -1,8 +1,67 @@
 ---
 title: "Component Metadata"
-description: "Prompts for component metadata."
+description: "Prompts for connecting Figma MCP and Cursor to manage component metadata."
 ---
 
-# Component Metadata Prompts
+### Component Metadata Prompts
 
-This page will cover prompts related to component metadata. 
+When you connect Figma to Cursor using the Model Context Protocol (MCP), you unlock a powerful workflow for managing and sharing component metadata. Here are some useful prompts to help you make the most of this connection.
+
+---
+
+#### Extracting Component Information
+
+<Info>
+Use these prompts when you've selected a component in Figma and want Cursor to extract its properties and structure.
+</Info>
+
+```text "Extract Component Props" wrap
+From the selected Figma component, extract all of its properties, including variants, and generate a TypeScript interface for it.
+```
+
+```text "Generate a Component Overview" wrap
+Analyze the selected component in Figma and create a Markdown table that summarizes its key properties, such as variants, sizes, and states.
+```
+
+```text "List All Component Tokens" wrap
+List all the design tokens (colors, fonts, spacing) used in the selected Figma component.
+```
+
+---
+
+#### Documenting Components
+
+<Info>
+Use these prompts to generate documentation for your components, making it easier for your team to understand and use them.
+</Info>
+
+```text "Create a Component README" wrap
+Based on the selected Figma component, generate a README.md file that includes:
+- A brief description of the component
+- A list of its properties and variants
+- A code example of how to use it in React
+```
+
+```text "Write User Stories for a Component" wrap
+For the selected component, write a set of user stories that describe its different use cases and interactions.
+```
+
+---
+
+#### Sharing and Collaboration
+
+<Info>
+Use these prompts to share component information with your team in different formats.
+</Info>
+
+```text "Create a Storybook File" wrap
+Generate a Storybook stories file for the selected Figma component. Include controls for all of its props so the team can interact with it.
+```
+
+```text "Draft a Slack Message for Component Updates" wrap
+Draft a Slack message for our #design-system channel that introduces the latest updates to the selected Figma component. Include a summary of the changes and a link to the Figma file.
+```
+
+```text "Generate JSON for Component Metadata" wrap
+Create a JSON object that represents the metadata of the selected Figma component. Include its name, properties, and a list of all used design tokens.
+```
