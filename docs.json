@@ -31,6 +31,12 @@
             ]
           },
           {
+            "group": "Prompting",
+            "pages": [
+              "prompting/basics"
+            ]
+          },
+          {
             "group": "Guides",
             "pages": [
               "guides/prompting-for-designers",
