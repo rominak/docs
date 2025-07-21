@@ -21,16 +21,6 @@
             ]
           },
           {
-            "group": "Bookmarks",
-            "pages": [
-              "bookmarks/agents",
-              "bookmarks/figma",
-              "bookmarks/prompting",
-              "bookmarks/resources",
-              "bookmarks/tools"
-            ]
-          },
-          {
             "group": "Prompting",
             "pages": [
               "prompting/basics",
@@ -38,6 +28,16 @@
               "prompting/prototyping",
               "prompting/documentation",
               "prompting/component-metadata"
+            ]
+          },
+          {
+            "group": "Bookmarks",
+            "pages": [
+              "bookmarks/agents",
+              "bookmarks/figma",
+              "bookmarks/prompting",
+              "bookmarks/resources",
+              "bookmarks/tools"
             ]
           },
           {
