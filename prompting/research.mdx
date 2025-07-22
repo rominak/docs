@@ -3,16 +3,22 @@ title: "Research"
 description: "Prompts for user and market research."
 ---
 
-#### User Flow Creation
+**User Flow Creation**
 
 ```text wrap
 Create a user flow for a [fitness app] that helps users set goals, track workouts, and view progress over time.
 ```
 
-#### User Analysis
+#### Rapid Survey Analysis 
 
-```text wrap
-Analyze [target audience/user group] and their pain points when [specific task]. What are their motivations, frustrations, and current workarounds? Include behavioral patterns and emotional triggers.
+```
+Prompt (Claude)
+Here is a 12-question Typeform export (CSV).
+Clean missing data.
+Run correlation between Q5 (‘Would you pay…’) and Q9 (‘Usage frequency’).
+Build a bar chart (png) of top 3 objections; save to Figma page ‘Survey Results’.”
+Airtable automation trigger
+“When new Typeform row lands → run the prompt above via Make.com → attach PNG to the record.
 ```
 
 #### Design Trend Research
