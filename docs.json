@@ -16,8 +16,8 @@
           {
             "group": "Overview",
             "pages": [
-              "hello",
-              "index"
+              "index",
+              "hello"
             ]
           },
           {
@@ -38,7 +38,8 @@
               "bookmarks/figma",
               "bookmarks/prompting",
               "bookmarks/resources",
-              "bookmarks/tools"
+              "bookmarks/tools",
+              "bookmarks/videos"
             ]
           },
           {
