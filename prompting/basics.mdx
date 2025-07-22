@@ -9,28 +9,20 @@ No-code AI tools (Cursor, Claude Code, Replit, Lovable, etc.) work best when you
 Instead of: "Make a button"
 
 ```
-Create a primary CTA button with rounded corners, blue background (#2563eb), 
-white text, hover state that darkens to #1d4ed8, and includes a subtle shadow. 
-It should be 44px tall for good touch targets.
+Create a primary CTA button with rounded corners, blue background (#2563eb), white text, hover state that darkens to #1d4ed8, and includes a subtle shadow. It should be 44px tall for good touch targets.
 ```
 
 Instead of: "Fix the layout"
 
 ```text wrap
-The product cards are breaking on mobile screens below 640px.
-I need them to stack vertically with 16px spacing between cards, 
-and each card should maintain its 4px border radius.
+The product cards are breaking on mobile screens below 640px. I need them to stack vertically with 16px spacing between cards, and each card should maintain its 4px border radius.
 ```
 
 **Start with the design problem.** \
 Before asking for code, explain what user experience you're creating. Are you building a mobile menu? A product card? A signup flow? When the AI understands your design goals, it can write much better code.
 
 ```
-I'm building a product showcase for an e-commerce site.
-Users should be able to quickly scan products, see key details 
-(price, rating, availability), and easily add items to cart. 
-The design needs to work on both desktop grid layouts 
-and mobile single-column views.
+I'm building a product showcase for an e-commerce site. Users should be able to quickly scan products, see key details (price, rating, availability), and easily add items to cart. The design needs to work on both desktop grid layouts and mobile single-column views.
 ```
 
 **Specify what your goal is.**\
@@ -67,22 +59,18 @@ But more importantly, be explicit about the _format_ you want:
 Share your brand colors, spacing rules, or design system basics, but don't micromanage every detail. 
 
 ```
-This is for a SaaS dashboard. 
-Users are power users who value information density over visual flair. 
-Prioritize clarity and quick scanning over decorative elements.
+This is for a SaaS dashboard. Users are power users who value information density over visual flair. Prioritize clarity and quick scanning over decorative elements.
 ```
 
 **Use AI for more than just coding.**\
 These tools can help you brainstorm component and design tokens names, suggest better CSS organization, check if your design is accessible, or even help you write documentation for your design system.
 
 ```
-Suggest 5 different names for a component that displays user avatars in a group, 
-with overflow indicators when there are too many.
+Suggest 5 different names for a component that displays user avatars in a group, with overflow indicators when there are too many.
 ```
 
 ```
-Write documentation for this button component. 
-Include usage examples, prop descriptions, and when to use each variant.
+Write documentation for this button component. Include usage examples, prop descriptions, and when to use each variant.
 ```
 
 **Automate the boring stuff.**\
@@ -91,9 +79,7 @@ Notice what design tasks you do over and over—like converting Figma designs to
 Create template prompts for repetitive tasks:
 
 ```
-Convert this Figma design to Tailwind CSS. 
-Use responsive breakpoints at 640px, 768px, and 1024px. 
-Extract any repeated patterns into utility classes.
+Convert this Figma design to Tailwind CSS. Use responsive breakpoints at 640px, 768px, and 1024px. Extract any repeated patterns into utility classes.
 ```
 
 **Memories, guidance.**
@@ -142,17 +128,13 @@ Some designers like detailed comments in their code, others prefer it clean and 
 AI tools sometimes go down rabbit holes or misunderstand requirements. Here's how to get back on track:
 
 ```
-Stop. Let's go back to the original requirement. I need [specific thing]. 
-What information do you need from me to build this correctly?
+Stop. Let's go back to the original requirement. I need [specific thing]. What information do you need from me to build this correctly?
 ```
 
 ```
-This isn't working. 
-Can you analyze what went wrong, review and suggest a different approach?
+This isn't working. Can you analyze what went wrong, review and suggest a different approach?
 ```
 
 ```
-Forget the previous approach. 
-Here's a working example of something similar [paste example]. 
-Adapt this pattern to solve my original problem.
+Forget the previous approach. Here's a working example of something similar [paste example]. Adapt this pattern to solve my original problem.
 ```
