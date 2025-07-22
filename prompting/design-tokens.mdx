@@ -9,28 +9,63 @@ description: "Prompts for creating and managing design tokens"
 Generate a complete design token system for [brand/product] using [token format: CSS custom properties/JSON/YAML]. Include color, typography, spacing, and component tokens with semantic naming.
 ```
 
-#### Create Tokens with a Naming Convention
+#### Naming design tokens
 
 ```text wrap
 Create design tokens following the [naming convention: BEM/atomic/tier-based] pattern. Structure them for [use case: design system/component library/multi-brand] with proper hierarchy and inheritance.
 ```
 
-#### Create Typography Tokens
+```markdown
+Create design tokens using the tier-based naming convention and follow the structure:
+component-category-state-role
 
-```text wrap
-Create typography tokens following this pattern: [font-family/size/weight/line-height]-[scale/variant]. Include responsive scaling and semantic hierarchy (heading, body, caption, etc.).
+Component: The UI element (e.g. button, input, card)
+
+Category: The design property (e.g. color, spacing, borderRadius, typography)
+
+State: The UI state (e.g. default, hover, active, disabled)
+
+Role: The semantic intent (e.g. primary, secondary, success, error)
+
+Structure the tokens for a [design system / component library / multi-brand setup].
+Ensure:
+
+Clear hierarchy from foundations to component-level tokens
+
+Logical inheritance (semantic tokens referencing foundational values)
+
+Scalability for adding new components, states, or roles
+
+Example tokens for at least 2 components (e.g. button and input)
+
+Output should be in JSON or Tokens Studio-compatible format.
 ```
 
-#### Build Accessibility Tokens
+#### Typography Tokens
 
 ```text wrap
-Build accessibility tokens for: focus indicators, high contrast modes, reduced motion, and screen reader states. Include WCAG compliance markers.
+Create typography tokens following this pattern: [font-family/size/weight/line-height]-[scale/variant]. 
+Include responsive scaling and semantic hierarchy (heading, body, caption, etc.).
+```
+
+#### Accessibility Tokens
+
+```text wrap
+Create accessibility tokens for: focus indicators, high contrast modes, reduced motion, and screen reader states. Include WCAG compliance markers.
 ```
 
 #### Audit Design Tokens
 
 ```text wrap
 Audit these design tokens for: naming consistency, proper hierarchy, accessibility compliance, and missing variants. Suggest improvements.
+```
+
+```
+Compare the color tokens used in this Figma frame to the tokens in tokens-studio.json. List mismatches and auto-fix the ones that are off by ≤2 %.
+```
+
+```
+Run accessibility checks on the selected frame, annotate WCAG 2.2 violations directly on the layers, and export an .xliff file for localization.
 ```
 
 #### Create a Token Implementation Status Table
@@ -45,8 +80,18 @@ Create a token implementation status table with: Token Name | Design Status | De
 Generate a JSON array of token objects that can be imported into spreadsheet tools: [ { "tokenName": "color-primary-500", "value": "#3B82F6", "category": "Color", "usage": "Primary buttons" } ]
 ```
 
-#### Compare Figma Variables with Design Tokens
+#### Figma Variables 
 
 ```text wrap
 Compare Figma variables with design tokens in code and identify: missing variables, unused tokens, and synchronization issues.
+```
+
+```
+Extract all variables from the Figma file and upsert them into Airtable base Design Tokens v2. If a variable already exists, update its value; if not, create it. Map Figma scopes to Airtable Group field.
+```
+
+**Figma MCP**
+
+```
+Figma MCP: “Use get_variable_defs, then output a Tailwind config that maps them 1-to-1
 ```
