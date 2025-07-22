@@ -4,7 +4,7 @@ description: "Start reading here ✨"
 ---
 
 **Be clear about what you want.** \
-No-code AI tools (Cursor, Claude Code, Replit, Lovable, etc.) work best when you tell them exactly what you're trying to build. The clearer you are, the better results you'll get. And by clear, I mean be very, very specific.
+No-code AI tools (Cursor, Claude Code, Replit, Lovable, etc.) work best when you tell them exactly what you're trying to build. Think of your prompt as a brief for a teammate. The clearer you are, the better results you'll get. And by clear, I mean be very, very specific.
 
 Instead of: "Make a button"
 
@@ -56,7 +56,7 @@ But more importantly, be explicit about the _format_ you want:
 ```
 
 **Give context.**\
-Share your brand colors, spacing rules, or design system basics, but don't micromanage every detail. 
+Share your brand colors, spacing rules, or design system basics, but don't micromanage every detail.
 
 ```
 This is for a SaaS dashboard. Users are power users who value information density over visual flair. Prioritize clarity and quick scanning over decorative elements.
@@ -110,8 +110,54 @@ Example:
 - Always include TypeScript types
 ```
 
-**Build a library of helpful prompts.**\
-When you find prompts that work well, save them. You'll use them again, and they'll save you time.
+It is also very helpful if you write a doc with steps. Example structure:
+
+```markdown
+ROLE
+
+You are (define role)
+
+OBJECTIVE
+
+Help me with ...
+
+CONTEXT
+
+Audience: (define your audience)
+
+Voice and tone: (be very specific)
+
+Key facts, excerpts, data, or links the answer must use:
+
+Known constraints or boundaries:
+
+WORKFLOW
+
+Define your workflow. For example:
+
+1. List any information still missing; ask me concise questions until gaps are filled.
+2. Outline a logical structure or bullet agenda for the piece. Wait for my approval.
+3. Write the first version following the approved plan.
+4. Review and ask me for feedback on clarity, tone, and completeness.
+5. Revise and improve the draft with my notes.
+6. Repeat steps 3‑5 until I confirm the plan.
+
+CONTEXT‑HANDLING RULES
+
+• If I do this X, then first do Y.
+
+• If you need more input, list the questions in the Gap check.
+
+OUTPUT FORMAT
+
+Return all content in _specify the format_
+
+When referencing someone, add the number to the Context Package.
+
+FIRST ACTION
+
+Start with Workflow “step  1: Gap check.”
+```
 
 **Start simple.**\
 Start with individual components, then combine them into larger sections, then full pages. This prevents overwhelming the AI and helps you catch issues early. For example:
@@ -122,10 +168,10 @@ Start with individual components, then combine them into larger sections, then f
 4. **Full pages**: Homepage combining Header \+ Hero \+ ProductGrid \+ Footer
 
 **Make it work for you.**\
-Some designers like detailed comments in their code, others prefer it clean and minimal. Some want step-by-step explanations, others just want the final result. Train the AI to match your style and preferences.
+Some designers like detailed comments in their code, others prefer it clean and minimal. Some want step-by-step explanations; others short answers. Train the AI to match your style and preferences.
 
 **When things don't work out**.\
-AI tools sometimes go down rabbit holes or misunderstand requirements. Here's how to get back on track:
+AI tools sometimes get stuck in a loop or misinterpret requirements. Here's how to get back on track:
 
 ```
 Stop. Let's go back to the original requirement. I need [specific thing]. What information do you need from me to build this correctly?
@@ -138,3 +184,8 @@ This isn't working. Can you analyze what went wrong, review and suggest a differ
 ```
 Forget the previous approach. Here's a working example of something similar [paste example]. Adapt this pattern to solve my original problem.
 ```
+
+**Build a library of helpful prompts.**\
+When you find prompts that work well, save them. You'll use them again, and they'll save you time.
+
+That's it, let's go to work. 🥰

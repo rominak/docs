@@ -1,10 +1,16 @@
 ---
-title: Figma MCP
+title: "Figma MCP"
 ---
 
-The Model Context Protocol (MCP) is an open-source standard that is rapidly changing how AI tools and design applications like Figma work together. Think of it as a universal connector that allows AI assistants to understand and interact with your designs on a much deeper level.
+<Card title="Official Release from Figma" icon="link" horizontal href="https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Dev-Mode-MCP-Server">
+  Guide to the Dev Mode MCP Server
+</Card>
 
-This guide will explain what MCP is, why it matters for designers, and how you can use it to streamline your workflow.
+The Model Context Protocol (MCP) is an open-source standard that is rapidly changing how AI tools and design applications, such as Figma, work together. Think of it as a universal connector that allows AI assistants to understand and interact with your designs on a much deeper level.
+
+![MCP Pn](/images/MCP.png)
+
+This guide explains what MCP is, why it matters to designers, and how you can utilize it to streamline your workflow.
 
 ### What is MCP?
 
@@ -18,17 +24,20 @@ As Figma's article on MCP explains, "The more context an AI assistant has, the b
 
 For designers, MCP bridges the gap between design and development more effectively than ever before. Here are some of the key benefits:
 
-*   **Higher-Fidelity Code:** By understanding the full context of your designs, AI tools can generate code that accurately reflects your design system's variables, components, and styles.
-*   **Faster Handoffs:** Developers can work more efficiently when the AI can directly interpret design files, reducing the need for manual specification and redlining.
-*   **Improved Collaboration:** When AI can speak the language of both design and code, it becomes a much more powerful collaborator in the product development process.
+- **Higher-Fidelity Code:** By understanding the full context of your designs, AI tools can generate code that accurately reflects your design system's variables, components, and styles.
+- **Faster Handoffs:** Developers can work more efficiently when the AI can directly interpret design files, reducing the need for manual specification and redlining.
+- **Improved Collaboration:** When AI can speak the language of both design and code, it becomes a much more powerful collaborator in the product development process.
 
 ### Who can use this feature
 
 <Info>
-    The Dev Mode MCP Server is in open beta.
-    Available on a [Dev or Full seat](https://help.figma.com/hc/en-us/articles/360039477034-Full-versus-editor-only-roles) on the Professional, Organization, or Enterprise plans.
-    You must use a code editor or application that supports MCP Servers (i.e. VS Code, Cursor, Windsurf, Claude Code).
-    You can only use the Dev Mode MCP server from the Figma desktop app. [Download the Figma desktop app &rarr;](https://www.figma.com/downloads/)
+  The Dev Mode MCP Server is in open beta.
+
+  Available on a [Dev or Full seat](https://help.figma.com/hc/en-us/articles/360039477034-Full-versus-editor-only-roles) on the Professional, Organization, or Enterprise plans.
+
+  You must use a code editor or application that supports MCP Servers (i.e. VS Code, Cursor, Windsurf, Claude Code).
+
+  You can only use the Dev Mode MCP server from the Figma desktop app. [Download the Figma desktop app →](https://www.figma.com/downloads/)
 </Info>
 
 ### What you need
@@ -38,7 +47,7 @@ To connect to Figma's MCP server, you'll need a code editor or application that 
 - **Windsurf**
 - **Claude Code**
 - **VS Code**
-- **[Cursor](https://www.cursor.com/dashboard)** (Recommended for its seamless integration)
+- [**Cursor**](https://www.cursor.com/dashboard)
 
 #### Other Editors
 
@@ -47,6 +56,8 @@ Other code editors and tools that support SSE (Server-Sent Events) can also conn
 If you're using a different editor or tool, check its documentation to confirm it supports SSE-based communication. If it does, you can manually add the Dev Mode MCP server using this configuration.
 
 ### How to Install the Figma MCP Server
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MFGPCYi5du0?si=pLNv1V3AjEW_QBHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
 
 <Steps>
   <Step title="Enable the MCP Server in Figma">
@@ -58,16 +69,16 @@ If you're using a different editor or tool, check its documentation to confirm i
 
     You should see a confirmation message at the bottom of your screen indicating that the server is running locally at `http://127.0.0.1:3845/sse`.
   </Step>
-
   <Step title="Set up your MCP Client">
     Once the server is running, you can connect your MCP client. Below are the instructions for popular editors.
 
     <AccordionGroup>
       <Accordion title="Cursor">
-        1.  Open **Cursor → Settings → Cursor Settings**.
-        2.  Go to the **MCP** tab.
-        3.  Click **+ Add new global MCP server**.
-        4.  Enter the following configuration and save:
+        1. Open **Cursor → Settings → Cursor Settings**.
+        2. Go to the **MCP** tab.
+        3. Click **\+ Add new global MCP server**.
+        4. Enter the following configuration and save:
+
         ```json
         {
           "mcpServers": {
@@ -82,9 +93,10 @@ If you're using a different editor or tool, check its documentation to confirm i
         [Instructions for Claude Code will go here]
       </Accordion>
       <Accordion title="VS Code">
-        1.  Go to **Code → Settings → Settings** (or use `⌘ ,`).
-        2.  Search for "MCP" and select **Edit in settings.json**.
-        3.  Add the Figma Dev Mode MCP configuration to your servers:
+        1. Go to **Code → Settings → Settings** (or use `⌘ ,`).
+        2. Search for "MCP" and select **Edit in settings.json**.
+        3. Add the Figma Dev Mode MCP configuration to your servers:
+
         ```json
         "chat.mcp.discovery.enabled": true,
         "mcp": {
@@ -97,16 +109,17 @@ If you're using a different editor or tool, check its documentation to confirm i
         },
         "chat.agent.enabled": true
         ```
-        4.  Open the chat toolbar (`⌥⌘B` or `⌃⌘I`) and switch to **Agent** mode.
-        5.  Open the **selection tool** menu and look for a section labeled: `MCP Server: Figma Dev Mode MCP`.
+
+        4. Open the chat toolbar (`⌥⌘B` or `⌃⌘I`) and switch to **Agent** mode.
+        5. Open the **selection tool** menu and look for a section labeled: `MCP Server: Figma Dev Mode MCP`.
 
         <Tip>
-            You must have GitHub Copilot enabled to use MCP in VS Code.
+          You must have GitHub Copilot enabled to use MCP in VS Code.
         </Tip>
-
       </Accordion>
       <Accordion title="Other Editors (SSE)">
         If you're using a different editor that supports SSE (Server-Sent Events), you can manually add the Dev Mode MCP server using this configuration:
+
         ```json
         {
           "mcpServers": {
@@ -116,16 +129,16 @@ If you're using a different editor or tool, check its documentation to confirm i
           }
         }
         ```
+
         Check your editor's documentation for the specific steps to add an SSE-compatible MCP server.
       </Accordion>
     </AccordionGroup>
   </Step>
-
   <Step title="Prompting Your MCP Client">
     Once connected, you can prompt your client to access a design node in two ways:
 
-    -   **Selection-based:** Select a frame or layer in the Figma desktop app and prompt your client to implement it.
-    -   **Link-based:** Copy the link to a frame or layer and ask your client to implement the design from the URL.
+    - **Selection-based:** Select a frame or layer in the Figma desktop app and prompt your client to implement it.
+    - **Link-based:** Copy the link to a frame or layer and ask your client to implement the design from the URL.
   </Step>
 </Steps>
 
@@ -133,49 +146,35 @@ If you're using a different editor or tool, check its documentation to confirm i
 
 To get the best results from the MCP server, follow these best practices.
 
-#### Structure Your Figma File for Better Code
+**Structure your Figma file:**
+
 - **Use components** for anything reused.
 - **Link components to your codebase** via Code Connect for the most consistent results.
-- **Use variables** for spacing, color, radius, and typography.
+- **Use variables** or design tokens for spacing, color, radius, and typography.
 - **Name layers semantically** (e.g., `CardContainer` instead of `Group 5`).
 - **Use Auto layout** to communicate responsive intent.
 - **Use annotations** to convey behavior that isn't visible.
 
 #### Write Effective Prompts
+
 Clear prompts lead to better results. Be specific about your needs:
+
 - "Generate iOS SwiftUI code from this frame."
 - "Use Chakra UI for this layout."
 - "Add this to `src/components/marketing/PricingCard.tsx`."
 
-Think of your prompt as a brief for a teammate. The clearer the intent, the better the output.
-
-<Card
-  href="/guides/prompting-for-designers"
-  title="Prompting for Designers Guide"
-  icon="book-open-cover"
->
+<Card title="Prompting for Designers Guide" icon="book-open-cover" href="/guides/prompting-for-designers">
   For more detailed examples and a comprehensive list of prompts, check out our guide to prompting for designers.
 </Card>
 
 ### Videos
 
 #### Getting Started with the Figma MCP Server
-<iframe
-  src="https://www.youtube.com/embed/MFGPCYi5du0"
-  title="YouTube video player"
-  frameBorder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  allowFullScreen
-  width="100%"
-  height="480"
-></iframe>
+
+<iframe src="https://www.youtube.com/embed/MFGPCYi5du0" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen width="100%" height="480" />
 
 ### Helpful links
 
-<Card
-  href="https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Dev-Mode-MCP-Server"
-  title="Official Figma MCP Documentation"
-  icon="book-open-cover"
->
+<Card title="Official Figma MCP Documentation" icon="book-open-cover" href="https://help.figma.com/hc/en-us/articles/32132100833559-Guide-to-the-Dev-Mode-MCP-Server">
   Read the official guide from Figma for detailed instructions and information.
 </Card>
