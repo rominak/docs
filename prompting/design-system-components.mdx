@@ -1,0 +1,172 @@
+---
+title: "Design System Components"
+description: "Prompts for creating design system components"
+---
+
+```markdown
+# Component Development Workflow with Figma MCP
+
+This workflow should be followed whenever a Figma link is provided for component development.
+
+## Workflow Steps
+
+### 1. Initial Setup & Analysis
+- **Initialize Figma MCP Connection**
+  - Use the Figma MCP (Model Context Protocol) for design system integration
+  - Verify access to the design file/project
+  - Extract node ID from provided Figma URL
+
+### 2. Analyze Figma Design
+- **Extract Component Data**
+
+### 3. Generate Component Specifications
+
+#### Visual Specifications:
+- Dimensions (width, height, padding, margins)
+- Typography (font family, size, weight, line-height)
+- Colors (fill, stroke, gradients)
+- Border radius and shadows
+- Spacing and alignment rules
+
+#### Behavioral Specifications:
+- Interactive states (hover, active, focus, disabled)
+- Animations and transitions
+- Responsive behavior and breakpoints
+- Accessibility requirements (ARIA labels, keyboard navigation)
+
+### 4. Implementation Phase
+
+#### Create Interactive Component:
+- Build fully functional component matching Figma design
+- Implement all interactive states and behaviors
+- Add proper TypeScript types/interfaces
+- Include all variants from Figma
+- Ensure responsive design implementation
+- Add proper error handling and edge cases
+
+### 5. Create Preview Showcases
+
+#### Design Tokens Preview:
+- Color tokens used in the component
+- Typography scale and tokens
+- Spacing tokens (margins, padding, gaps)
+- Border radius tokens
+- Shadow/elevation tokens
+- Animation/transition tokens
+
+
+#### Styles Preview:
+- All component variants side by side
+- Theme variations (light/dark mode if applicable)
+- Size variations (small, medium, large)
+- State demonstrations (interactive demo)
+- Responsive behavior at different breakpoints
+
+#### Properties Preview:
+- Live prop manipulation interface
+- Documentation for each prop
+- Code examples for common use cases
+- Validation rules and constraints
+- Default values clearly indicated
+
+### 6. Component-Specific Features
+
+
+### 7. Documentation Generation
+(describe what you want)
+
+### 8. Testing Setup
+(describe what you want)
+
+## Output Structure
+
+### Directory Organization:
+(describe what you want)
+
+## Execution Order
+
+1. **Parse Figma URL** → Extract node ID
+2. **Fetch Design Data** → Get all component information from Figma
+3. **Analyze & Document** → Create specifications
+4. **Build Component** → Implement with all features
+5. **Create Previews** → Generate visual showcases
+6. **Write Documentation** → Complete usage guides
+7. **Setup Tests** → Ensure quality
+
+```
+
+```
+Build a reusable React input component that matches these Figma specs (paste link).  
+  
+Use CDN React + plain CSS, include states (default, focus, disabled, read-only, error, success), optional left/right icons, hint/error/success messaging, and a demo page that showcases each state and size.
+```
+
+```markdown
+# Bare Minimum Prompt
+
+**Figma Link**: [Share your Figma design link here]
+
+## Task
+Short description what you want
+
+### Core Behavior
+Short description what you want
+
+### Tech
+- Vanilla JS, Tailwind CSS, Inter font
+- 16px icons, keyboard accessible
+- Emit `filterChange` event
+
+### Files
+- `index.html`, `filter.js`, `styles.css`
+
+**Done when**: Matches Figma design with full interactivity.
+```
+
+**Prompt from the video Vibe-coding for designers #2 - Model vs Prompt**
+
+```
+**Step 1**: Paste your Figma design link here: https://www.figma.com/design/JWFZuCni2InkUy3l9hXGhw/Vibe-coding-for-designers?node-id=24-221&t=IGawd6TwL5a88eLG-1
+
+## Task
+Create an interactive filter chip component that matches the Figma design with these behaviors:
+
+### Core Functionality
+- **Two states**: "All" state (unfiltered) and "Selected" state (filtered)
+- **State switching**: Component changes appearance/content between states
+- **Interactive dropdown**: Click chip to open selection interface
+- **Dynamic content**: Shows different text/icons based on current state
+- **Remove action**: Way to delete/clear the filter entirely
+
+### Required Interactions
+1. **Default state**: Component shows initial appearance from Figma
+2. **Click chip**: Opens dropdown/modal for user selections
+3. **Make selections**: User can choose/unchoose options
+4. **Apply changes**: Component updates to show selections
+5. **Clear/remove**: User can reset or delete the filter
+
+### Technical Requirements
+- **Framework**: Use what fits your project (React, Vue, vanilla JS, etc.)
+- **Styling**: Match Figma specs exactly (colors, fonts, spacing, borders)
+- **Icons**: Implement icon switching between states as shown in design
+- **Responsive**: Ensure mobile-friendly touch targets
+- **Accessible**: Keyboard navigation + screen reader support
+- **Events**: Emit changes so parent components can respond
+
+### Implementation Guide
+1. **Analyze Figma**: Identify the two states and their visual differences
+2. **Extract tokens**: Colors, typography, spacing, border radius from design
+3. **Plan interactions**: Map user actions to state changes
+4. **Build component**: Start with static states, add interactivity
+5. **Test thoroughly**: Verify all interactions work across devices
+
+### Success Criteria
+✅ Visual design matches Figma exactly  
+✅ State transitions work smoothly  
+✅ Dropdown/selection interface functions correctly  
+✅ Component integrates with parent application  
+✅ Accessible via keyboard and screen readers  
+✅ Works on mobile and desktop  
+
+**Deliverable**: Functional filter component that replicates Figma design with full interactivity.
+```
