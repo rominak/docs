@@ -1,0 +1,66 @@
+---
+title: "Accessibility"
+description: "Description of your new file."
+---
+
+The Accessibility Checklist
+
+```
+Accessibility Requirements (NON-NEGOTIABLE):
+
+Keyboard Navigation:
+- Tab: Move focus to button
+- Enter/Space: Activate button
+- Focus visible: 2px outline, --color-focus-ring
+- Focus trap: NO (button must allow tab-through)
+
+Screen Readers:
+- aria-label: [When button text isn't descriptive]
+- aria-busy="true": [During loading state]
+- aria-disabled="true": [When disabled, NOT just disabled attribute]
+- Role: "button" (explicit, even on <button> element)
+
+Loading State (Screen Reader):
+- Announce: "Loading" (use aria-live="polite" region)
+- Original text: aria-label preserves it while visual shows spinner
+
+Disabled State:
+- NEVER use disabled on buttons that need explanation
+- Use aria-disabled="true" + pointer-events: none
+- Add tooltip explaining WHY disabled
+
+Color Contrast:
+- WCAG AA minimum: 4.5:1 (text), 3:1 (interactive elements)
+- Test with: All color modes (light/dark/high contrast)
+- Tool: Include contrast ratio check in component tests
+
+Touch Targets (Mobile):
+- Minimum: 44x44px (actual tappable area, NOT visual size)
+- Implementation: Use padding to expand hitbox if visual smaller
+```
+
+**Auto-test in your prompt:**
+
+```
+Testing Requirements:
+- Run jest-axe on all variants
+- Test keyboard-only navigation (no mouse)
+- Test with VoiceOver (Mac) or NVDA (Windows)
+- If ANY axe violation, fix before marking complete
+```
+
+**Common AI mistakes to prevent:**
+
+```
+❌ DON'T let AI do this:
+- <div onClick> without role="button" and keyboard handlers
+- disabled without aria-disabled
+- Icon-only buttons without aria-label
+- Focus styles that are "outline: none" only
+
+✅ DO enforce this:
+- Semantic HTML (<button>, not <div>)
+- Both disabled AND aria-disabled="true"
+- aria-label on all icon-only buttons
+- Visible focus indicator (never remove without replacement)
+```

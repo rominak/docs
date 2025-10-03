@@ -29,7 +29,8 @@
               "prompting/documentation",
               "prompting/design-system-components",
               "prompting/component-metadata",
-              "prompting/design-tokens"
+              "prompting/design-tokens",
+              "prompting/accessibility"
             ]
           },
           {
