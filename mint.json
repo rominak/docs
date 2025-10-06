@@ -1,0 +1,81 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "The AI design library",
+  "logo": {
+    "light": "/logo/logo-light.svg",
+    "dark": "/logo/logo-dark.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#009689",
+    "light": "#00BBA7",
+    "dark": "#009689"
+  },
+  "topbarLinks": [
+    {
+      "name": "Contact",
+      "url": "mailto:hey@romina.design"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Dashboard",
+    "url": "https://dashboard.mintlify.com"
+  },
+  "anchors": [
+    {
+      "name": "The Design System Guide",
+      "icon": "book-open-cover",
+      "url": "https://thedesignsystem.guide/"
+    },
+    {
+      "name": "Newsletter",
+      "icon": "newspaper",
+      "url": "https://learn.thedesignsystem.guide/"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Overview",
+      "pages": [
+        "index",
+        "hello"
+      ]
+    },
+    {
+      "group": "Prompting",
+      "pages": [
+        "prompting/basics",
+        "prompting/research",
+        "prompting/prototyping",
+        "prompting/documentation",
+        "prompting/design-system-components",
+        "prompting/component-metadata",
+        "prompting/design-tokens",
+        "prompting/accessibility"
+      ]
+    },
+    {
+      "group": "Bookmarks",
+      "pages": [
+        "bookmarks/agents",
+        "bookmarks/figma",
+        "bookmarks/prompting",
+        "bookmarks/resources",
+        "bookmarks/tools",
+        "bookmarks/videos"
+      ]
+    },
+    {
+      "group": "Guides",
+      "pages": [
+        "guides/install-cursor",
+        "guides/figmamcp",
+        "guides/key-terms"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "x": "https://x.com/rominakavcic",
+    "linkedin": "https://www.linkedin.com/in/rominakavcic/"
+  }
+}
