@@ -1,0 +1,434 @@
+---
+title: "Advanced Cursor + Claude Integration"
+description: "Master multi-model workflows, design-to-code automation, and advanced techniques for seamless AI-powered development."
+---
+
+Building on the basics of Cursor setup, this guide explores advanced techniques for integrating Claude with Cursor to create powerful design-to-code workflows, multi-model strategies, and sophisticated AI development patterns.
+
+## Multi-Model Strategy Setup
+
+### **Primary and Secondary Model Configuration**
+
+```text wrap
+Configure Cursor to use multiple AI models strategically:
+
+Primary model (Claude 3.5 Sonnet): Complex design system implementation, architecture decisions, code reviews
+Secondary model (GPT-4): Quick iterations, debugging, documentation generation  
+Specialized model (Codestral): Performance optimization, refactoring, code analysis
+
+Set up model switching shortcuts:
+- Cmd/Ctrl + Shift + 1: Claude for design system work
+- Cmd/Ctrl + Shift + 2: GPT-4 for rapid prototyping
+- Cmd/Ctrl + Shift + 3: Codestral for optimization
+
+Create context templates for each model with specific instructions and examples.
+```
+
+### **Model-Specific Prompt Engineering**
+
+**For Claude (Design System Focus):**
+```text wrap
+You are working on a design system implementation. Consider:
+- Component reusability and composition patterns
+- Accessibility requirements (WCAG 2.1 AA)
+- TypeScript best practices for props and interfaces
+- Design token integration and theming
+- Storybook documentation standards
+- Performance implications of component architecture
+
+Current design system context: [Component library using Radix UI, Tailwind CSS, TypeScript]
+Brand requirements: [Consistent spacing scale, accessible color palette, responsive design]
+
+Task: [Your specific request]
+```
+
+**For Quick Iterations (GPT-4):**
+```text wrap
+Focus on rapid development and quick solutions:
+- Prioritize working code over perfect architecture
+- Use common patterns and established libraries
+- Provide minimal, functional implementations
+- Include basic error handling
+- Generate placeholder content where needed
+
+Development context: [React, Next.js, quick prototype]
+Time constraint: [Need working solution in under 30 minutes]
+
+Task: [Your specific request]
+```
+
+## Advanced Design-to-Code Workflows
+
+### **Figma Design Analysis**
+
+```text wrap
+Analyze this Figma design and create implementation plan:
+
+Design file: [Paste Figma URL or screenshot]
+
+Analysis needed:
+1. Component hierarchy and atomic design structure
+2. Responsive behavior patterns across breakpoints
+3. Design token extraction (colors, typography, spacing, shadows)
+4. Interaction states and micro-animations
+5. Accessibility considerations and ARIA requirements
+6. Performance optimization opportunities
+
+Generate:
+- Component architecture diagram
+- Props interface definitions
+- Styled-components/CSS structure
+- Implementation priority ranking
+- Testing strategy for each component
+- Storybook story templates
+
+Tech stack: [React, TypeScript, Styled-components, Framer Motion]
+```
+
+### **Design System Component Generation**
+
+```text wrap
+Create a complete design system component from design specifications:
+
+Component: [Button, Card, Modal, etc.]
+Design specs:
+- Variants: [primary, secondary, tertiary, destructive]
+- Sizes: [sm, md, lg, xl]
+- States: [default, hover, active, disabled, loading]
+- Responsive behavior: [Mobile-first approach]
+
+Requirements:
+- TypeScript interfaces with comprehensive prop types
+- Compound component pattern where appropriate
+- Forward refs for DOM manipulation
+- Accessibility features built-in (ARIA, keyboard navigation)
+- CSS-in-JS or utility class implementation
+- Animation and transition handling
+- Error boundaries and fallback states
+- Comprehensive Storybook stories
+- Unit and integration tests
+- JSDoc documentation
+
+Include usage examples and integration guidelines.
+```
+
+### **Design Token Integration**
+
+```text wrap
+Integrate design tokens into component implementation:
+
+Token structure:
+```json
+{
+  "color": {
+    "brand": {
+      "primary": { "value": "#2563eb" },
+      "secondary": { "value": "#64748b" }
+    },
+    "semantic": {
+      "success": { "value": "{color.green.500}" },
+      "error": { "value": "{color.red.500}" }
+    }
+  },
+  "spacing": {
+    "xs": { "value": "0.25rem" },
+    "sm": { "value": "0.5rem" },
+    "md": { "value": "1rem" }
+  }
+}
+```
+
+Create:
+- Token-aware component implementations
+- Type-safe token consumption patterns
+- Theme switching capabilities
+- Runtime token validation
+- Development-time token assistance
+- Token usage analytics integration
+
+Output: Components that dynamically consume design tokens with full TypeScript support.
+```
+
+## Advanced Code Generation Patterns
+
+### **Component Composition Strategies**
+
+```text wrap
+Generate a compound component system with advanced composition patterns:
+
+Base component: [DataTable, Navigation, Form]
+
+Requirements:
+- Slot-based architecture for maximum flexibility
+- Context providers for internal state management
+- Render props and function-as-children patterns
+- Higher-order component utilities
+- Hook-based logic extraction
+- Polymorphic component capabilities (as prop)
+- Controlled and uncontrolled modes
+- Plugin architecture for extensibility
+
+Include:
+- TypeScript generics for type safety
+- Performance optimization with React.memo
+- Error boundaries and fallback UI
+- Development-time warnings and validations
+- Comprehensive test coverage
+- Integration examples with popular libraries
+
+Framework: [React, Vue, Angular]
+```
+
+### **Intelligent Code Refactoring**
+
+```text wrap
+Refactor this codebase section for better design system integration:
+
+Current code: [Paste problematic code section]
+
+Improvements needed:
+- Extract hardcoded values to design tokens
+- Implement consistent component patterns
+- Add proper TypeScript types
+- Improve accessibility implementation
+- Optimize for performance
+- Add error handling and edge cases
+- Enhance maintainability and readability
+
+Guidelines:
+- Maintain backward compatibility where possible
+- Provide migration path for breaking changes
+- Generate automated tests for refactored code
+- Document all changes with reasoning
+- Include performance benchmarks
+- Suggest follow-up optimizations
+
+Design system context: [Your current system architecture]
+```
+
+## Intelligent Development Workflows
+
+### **Context-Aware Code Generation**
+
+```text wrap
+Set up intelligent context awareness for your project:
+
+Project context:
+- Design system: [Radix UI + Tailwind CSS]
+- State management: [Zustand, Redux Toolkit, Context]
+- Testing: [Jest, Testing Library, Playwright]
+- Documentation: [Storybook, Docusaurus]
+- Build tools: [Vite, Webpack, Parcel]
+
+Create context templates that automatically:
+- Import relevant dependencies
+- Follow established patterns
+- Apply consistent code style
+- Include appropriate tests
+- Generate documentation
+- Consider performance implications
+- Validate accessibility requirements
+
+Include: File structure analysis, dependency mapping, and pattern recognition.
+```
+
+### **Automated Code Reviews**
+
+```text wrap
+Perform comprehensive code review focusing on design system compliance:
+
+Code to review: [Paste code or file path]
+
+Review criteria:
+- Design system pattern adherence
+- Component API consistency
+- Accessibility implementation
+- Performance considerations
+- TypeScript best practices
+- Testing coverage adequacy
+- Documentation completeness
+- Responsive design implementation
+
+Generate:
+- Detailed feedback with specific suggestions
+- Priority ranking of issues (critical, important, nice-to-have)
+- Code examples for recommended improvements
+- Links to relevant design system documentation
+- Automated fix suggestions where possible
+- Testing recommendations for changes
+
+Output format: GitHub-style review comments with actionable feedback.
+```
+
+### **Intelligent Bug Detection and Fixing**
+
+```text wrap
+Analyze and fix issues in design system implementation:
+
+Problem description: [Specific issue or error message]
+Affected component: [Component name and file path]
+Current behavior: [What's happening now]
+Expected behavior: [What should happen]
+
+Investigation areas:
+- Component prop handling and validation
+- CSS specificity and styling conflicts
+- JavaScript/TypeScript errors and type issues
+- Accessibility violations (ARIA, keyboard navigation)
+- Performance bottlenecks and memory leaks
+- Browser compatibility issues
+- Design token application problems
+
+Provide:
+- Root cause analysis with explanation
+- Step-by-step fix implementation
+- Prevention strategies for similar issues
+- Testing approach to verify fix
+- Performance impact assessment
+- Regression testing recommendations
+```
+
+## Advanced Integration Techniques
+
+### **Design File Synchronization**
+
+```text wrap
+Create automated sync between Figma designs and code components:
+
+Figma setup:
+- Component variants and properties
+- Design token plugin integration
+- Auto-layout and responsive constraints
+- Component descriptions and documentation
+
+Code sync requirements:
+- Automated prop interface generation from Figma properties
+- Design token extraction and code integration
+- Component documentation sync with Figma descriptions
+- Visual regression testing setup
+- Change detection and notification system
+
+Implementation:
+- Figma API integration script
+- GitHub Action for automated updates
+- Developer notification workflow
+- Conflict resolution procedures
+- Rollback mechanisms for failed syncs
+
+Tech stack: [Figma API, Node.js, GitHub Actions, TypeScript]
+```
+
+### **AI-Powered Component Testing**
+
+```text wrap
+Generate comprehensive test suites for design system components:
+
+Component: [Component name and implementation]
+
+Test coverage requirements:
+- Unit tests for all component variants and states
+- Integration tests for component interactions
+- Visual regression tests for design consistency
+- Accessibility tests (ARIA, keyboard navigation, screen reader)
+- Performance tests for rendering and interaction speed
+- Cross-browser compatibility tests
+- Responsive design tests across breakpoints
+
+Generate:
+- Jest/Vitest unit test files
+- Testing Library integration tests
+- Playwright E2E test scenarios
+- Storybook interaction tests
+- Performance benchmark tests
+- Accessibility audit automation
+- Visual regression test setup
+
+Include: Mock data generation, test utilities, and CI/CD integration.
+```
+
+### **Performance Optimization Automation**
+
+```text wrap
+Analyze and optimize design system performance:
+
+Current implementation: [Component or system section]
+
+Optimization areas:
+- Bundle size analysis and reduction strategies
+- Runtime performance profiling and improvements
+- CSS optimization and critical path analysis
+- Image and asset optimization
+- Code splitting and lazy loading implementation
+- Memory usage optimization
+- Animation performance tuning
+
+Generate:
+- Performance audit report with metrics
+- Optimization recommendations with priority ranking
+- Implementation plan for improvements
+- Before/after performance comparisons
+- Automated performance testing setup
+- Performance budget recommendations
+- Monitoring and alerting configuration
+
+Tools: [Lighthouse, Webpack Bundle Analyzer, React DevTools, Chrome DevTools]
+```
+
+## Advanced Debugging and Troubleshooting
+
+### **Design System Debug Assistant**
+
+```text wrap
+Debug complex design system issues:
+
+Issue description: [Detailed problem description]
+Environment: [Browser, device, framework version]
+Error messages: [Console errors or warnings]
+Steps to reproduce: [User actions leading to issue]
+
+Debugging approach:
+- Component tree analysis and prop drilling investigation
+- CSS cascade and specificity conflict detection
+- JavaScript runtime error analysis and stack trace review
+- Performance bottleneck identification
+- Accessibility violation detection and remediation
+- Cross-browser compatibility issue investigation
+
+Provide:
+- Systematic debugging checklist
+- Tool recommendations for issue investigation
+- Code inspection techniques
+- Solution implementation with explanation
+- Prevention strategies for similar issues
+- Documentation updates to prevent recurrence
+```
+
+## Best Practices for Advanced Integration
+
+### **Workflow Optimization Tips**
+
+1. **Model Switching Strategy**: Use specific models for different task types
+2. **Context Management**: Maintain rich context files for consistent outputs
+3. **Prompt Libraries**: Build reusable prompt templates for common tasks
+4. **Quality Gates**: Implement automated quality checks in your workflow
+5. **Learning Loop**: Continuously refine prompts based on output quality
+
+### **Team Collaboration Patterns**
+
+- Share prompt templates and context configurations across team
+- Establish code review processes for AI-generated code
+- Create training materials for advanced Cursor techniques
+- Document successful prompt patterns and workflows
+- Set up feedback mechanisms for continuous improvement
+
+### **Performance and Quality Monitoring**
+
+- Track time savings from AI-assisted development
+- Monitor code quality metrics for AI-generated components
+- Measure design-code consistency improvements
+- Assess accessibility compliance rates
+- Evaluate developer satisfaction and adoption
+
+---
+
+Advanced Cursor + Claude integration transforms design system development from reactive coding to proactive, intelligent collaboration. Start with one advanced technique, master it, then gradually incorporate others into your workflow for maximum impact.
