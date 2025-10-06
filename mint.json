@@ -51,7 +51,6 @@
         "prompting/design-system-components",
         "prompting/component-metadata",
         "prompting/design-tokens",
-        "prompting/design-tokens-automation",
         "prompting/accessibility"
       ]
     },
@@ -70,7 +69,6 @@
       "group": "Guides",
       "pages": [
         "guides/install-cursor",
-        "guides/advanced-cursor-claude",
         "guides/figmamcp",
         "guides/key-terms"
       ]
